@@ -16,3 +16,4 @@ To use this Tool:
 - Click Index.html
 - Click 'download raw file' in the grey banner
 - open file to see comparison tables
+- To open in Excel, change the file extension from html to xls. choose 'yes' to '[...]. Do you want to open it anyway?'
