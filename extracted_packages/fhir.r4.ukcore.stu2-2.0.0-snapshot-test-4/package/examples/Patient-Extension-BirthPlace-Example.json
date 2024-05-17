@@ -1,0 +1,1 @@
+{"resourceType":"Patient","id":"Patient-Extension-BirthPlace-Example","extension":[{"url":"http://hl7.org/fhir/StructureDefinition/patient-birthPlace","valueAddress":{"line":["MATERNITY UNIT","LENVILLE UNIVERSITY HOSPITAL","BEWLEY STREET"],"city":"LENVILLE","postalCode":"LEN 7TF","country":"ENGLAND"}}]}

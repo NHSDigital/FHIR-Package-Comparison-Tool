@@ -1,0 +1,1 @@
+{"resourceType":"Patient","id":"UKCore-Patient-Extension-ContactRank-Example","contact":[{"extension":[{"url":"https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank","valuePositiveInt":1}],"name":{"use":"official","family":"CARTER","given":["Emily"]},"telecom":[{"system":"phone","value":"01131231288"}],"gender":"female"}]}
