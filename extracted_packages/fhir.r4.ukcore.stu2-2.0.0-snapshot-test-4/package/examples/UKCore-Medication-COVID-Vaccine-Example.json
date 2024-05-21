@@ -1,1 +1,0 @@
-{"resourceType":"Medication","id":"UKCore-Medication-COVID-Vaccine-Example","code":{"coding":[{"system":"https://dmd.nhs.uk","code":"39115611000001103","display":"Comirnaty COVID-19 mRNA Vaccine 30micrograms/0.3ml dose concentrate for dispersion for injection multidose vials (Pfizer Ltd)"}]},"batch":{"lotNumber":"FK0112","expirationDate":"2021-10-26"}}
