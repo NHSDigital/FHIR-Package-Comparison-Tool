@@ -1,0 +1,1 @@
+{"resourceType":"Medication","id":"0ba25da1-8294-4be4-99a4-526a5a7d2bad","meta":{"versionId":"1","lastUpdated":"2023-01-24T13:39:11.5944636+00:00","profile":["https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Medication-1"]},"code":{"coding":[{"system":"https://dmd.nhs.uk","code":"36126411000001107","display":"Morphine 10mg modified-release capsules"}]}}

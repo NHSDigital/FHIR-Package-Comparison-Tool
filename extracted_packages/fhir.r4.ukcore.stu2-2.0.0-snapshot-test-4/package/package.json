@@ -1,0 +1,13 @@
+{
+  "name": "fhir.r4.ukcore.stu2",
+  "version": "2.0.0-snapshot-test-4",
+  "description": "UK Core FHIR profiles and Assets",
+  "author": "HL7 UK",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "jurisdiction": "urn:iso:std:iso:3166#GB",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1"
+  }
+}

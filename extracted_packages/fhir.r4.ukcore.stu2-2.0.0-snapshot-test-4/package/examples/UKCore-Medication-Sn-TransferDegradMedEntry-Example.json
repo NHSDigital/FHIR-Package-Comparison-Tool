@@ -1,0 +1,1 @@
+{"resourceType":"Medication","id":"UKCore-Medication-Sn-TransferDegradMedEntry-Example","code":{"coding":[{"system":"http://snomed.info/sct","code":"196421000000109","display":"Transfer-degraded medication entry"}],"text":"Aspirin 75mg dispersible tablet"}}

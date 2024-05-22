@@ -94,8 +94,8 @@
     <tr>
       <th>Organization.identifier</th>
       <td>True</td>
+      <td></td>
       <td>True</td>
-      <td>False</td>
     </tr>
     <tr>
       <th>Organization.identifier.system</th>
@@ -108,6 +108,30 @@
       <td></td>
       <td></td>
       <td>True</td>
+    </tr>
+    <tr>
+      <th>Organization.identifier:CLIA</th>
+      <td></td>
+      <td></td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Organization.identifier:NAIC</th>
+      <td></td>
+      <td></td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Organization.identifier:NPI</th>
+      <td></td>
+      <td></td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>Organization.identifier:odsOrganisationCode</th>
+      <td></td>
+      <td>True</td>
+      <td></td>
     </tr>
     <tr>
       <th>Organization.name</th>
@@ -188,7 +212,7 @@
       <td></td>
     </tr>
     <tr>
-      <th>Immunization.extension</th>
+      <th>Immunization.extension:parentPresent</th>
       <td></td>
       <td>True</td>
       <td></td>
@@ -332,7 +356,7 @@
       <td>True</td>
     </tr>
     <tr>
-      <th>Patient.address.extension</th>
+      <th>Patient.address.extension:addressKey</th>
       <td>False</td>
       <td></td>
       <td></td>
@@ -374,15 +398,51 @@
       <td>True</td>
     </tr>
     <tr>
-      <th>Patient.deceasedDateTime</th>
+      <th>Patient.deceasedDateTime:deceasedDateTime</th>
       <td></td>
       <td>True</td>
       <td></td>
     </tr>
     <tr>
-      <th>Patient.extension</th>
+      <th>Patient.extension:birthsex</th>
+      <td></td>
+      <td></td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Patient.extension:ethnicity</th>
+      <td></td>
+      <td></td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Patient.extension:genderIdentity</th>
+      <td></td>
+      <td></td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Patient.extension:race</th>
+      <td></td>
+      <td></td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Patient.extension:registrationDetails</th>
       <td></td>
       <td>True</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Patient.extension:sex</th>
+      <td></td>
+      <td></td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Patient.extension:tribalAffiliation</th>
+      <td></td>
+      <td></td>
       <td>False</td>
     </tr>
     <tr>
@@ -399,27 +459,45 @@
     </tr>
     <tr>
       <th>Patient.identifier</th>
-      <td>False</td>
       <td>True</td>
+      <td></td>
       <td>True</td>
-    </tr>
-    <tr>
-      <th>Patient.identifier.extension</th>
-      <td>False</td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Patient.identifier.system</th>
-      <td>True</td>
+      <td></td>
       <td></td>
       <td>True</td>
     </tr>
     <tr>
       <th>Patient.identifier.value</th>
-      <td>True</td>
+      <td></td>
       <td></td>
       <td>True</td>
+    </tr>
+    <tr>
+      <th>Patient.identifier:nhsNumber</th>
+      <td>False</td>
+      <td>True</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Patient.identifier:nhsNumber.extension:nhsNumberVerificationStatus</th>
+      <td>False</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Patient.identifier:nhsNumber.system</th>
+      <td>True</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Patient.identifier:nhsNumber.value</th>
+      <td>True</td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <th>Patient.name</th>
@@ -436,7 +514,7 @@
     <tr>
       <th>Patient.name.given</th>
       <td>True</td>
-      <td>True</td>
+      <td></td>
       <td>True</td>
     </tr>
     <tr>
@@ -450,6 +528,12 @@
       <td></td>
       <td></td>
       <td>False</td>
+    </tr>
+    <tr>
+      <th>Patient.name:official.given</th>
+      <td></td>
+      <td>True</td>
+      <td></td>
     </tr>
     <tr>
       <th>Patient.telecom</th>
@@ -610,7 +694,39 @@
       <td></td>
     </tr>
     <tr>
-      <th>Observation.category.coding</th>
+      <th>Observation.category:SocialHistory</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.category:VSCat</th>
       <td></td>
       <td></td>
       <td></td>
@@ -642,7 +758,39 @@
       <td></td>
     </tr>
     <tr>
-      <th>Observation.category.coding.code</th>
+      <th>Observation.category:VSCat.coding</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.category:VSCat.coding.code</th>
       <td></td>
       <td></td>
       <td></td>
@@ -674,7 +822,7 @@
       <td></td>
     </tr>
     <tr>
-      <th>Observation.category.coding.system</th>
+      <th>Observation.category:VSCat.coding.system</th>
       <td></td>
       <td></td>
       <td></td>
@@ -703,6 +851,166 @@
       <td>True</td>
       <td></td>
       <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.category:laboratory</th>
+      <td>True</td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.category:screening-assessment</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.category:socialhistory</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.category:survey</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.category:us-core</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
       <td></td>
     </tr>
     <tr>
@@ -739,6 +1047,70 @@
     </tr>
     <tr>
       <th>Observation.code.coding</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.code.coding:O2Sat</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.code.coding:PulseOx</th>
       <td></td>
       <td></td>
       <td></td>
@@ -852,11 +1224,11 @@
       <td></td>
       <td></td>
       <td>True</td>
-      <td>True</td>
+      <td></td>
       <td>True</td>
       <td>True</td>
       <td></td>
-      <td>True</td>
+      <td></td>
       <td>True</td>
       <td>True</td>
       <td>True</td>
@@ -898,198 +1270,6 @@
       <td></td>
     </tr>
     <tr>
-      <th>Observation.component.valueCodeableConcept</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>True</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component.valueQuantity</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>True</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>True</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>True</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component.valueQuantity.code</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>True</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>True</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component.valueQuantity.system</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>True</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>True</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component.valueQuantity.unit</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>True</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>True</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component.valueQuantity.value</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>True</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>True</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
       <th>Observation.component.value[x]</th>
       <td></td>
       <td></td>
@@ -1112,7 +1292,7 @@
       <td>True</td>
       <td>True</td>
       <td></td>
-      <td>True</td>
+      <td></td>
       <td>True</td>
       <td>True</td>
       <td>True</td>
@@ -1122,44 +1302,12 @@
       <td></td>
     </tr>
     <tr>
-      <th>Observation.component.value[x].code</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>True</td>
+      <th>Observation.component:Concentration</th>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
-      <td>True</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component.value[x].system</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>True</td>
       <td></td>
       <td></td>
       <td></td>
@@ -1186,12 +1334,12 @@
       <td></td>
     </tr>
     <tr>
-      <th>Observation.component.value[x].unit</th>
+      <th>Observation.component:Concentration.code</th>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
-      <td>True</td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -1218,7 +1366,13 @@
       <td></td>
     </tr>
     <tr>
-      <th>Observation.component.value[x].value</th>
+      <th>Observation.component:Concentration.dataAbsentReason</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -1229,7 +1383,1697 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:Concentration.valueQuantity</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:Concentration.valueQuantity.code</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:Concentration.valueQuantity.system</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:Concentration.valueQuantity.unit</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:Concentration.valueQuantity.value</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:Concentration.value[x]</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:Concentration.value[x].code</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:Concentration.value[x].system</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:Concentration.value[x].unit</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:Concentration.value[x].value</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:FlowRate</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:FlowRate.code</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:FlowRate.dataAbsentReason</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:FlowRate.valueQuantity</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:FlowRate.valueQuantity.code</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:FlowRate.valueQuantity.system</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:FlowRate.valueQuantity.unit</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:FlowRate.valueQuantity.value</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:FlowRate.value[x]</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:FlowRate.value[x].code</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:FlowRate.value[x].system</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:FlowRate.value[x].unit</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:FlowRate.value[x].value</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:diastolic</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:diastolic.code</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:diastolic.dataAbsentReason</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:diastolic.valueQuantity</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:diastolic.valueQuantity.code</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:diastolic.valueQuantity.system</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:diastolic.valueQuantity.unit</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:diastolic.valueQuantity.value</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:diastolic.value[x]</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:diastolic.value[x].code</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:diastolic.value[x].system</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:diastolic.value[x].unit</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:diastolic.value[x].value</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:industry</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:industry.code</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:industry.valueCodeableConcept</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:industry.value[x]</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:systolic</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:systolic.code</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:systolic.dataAbsentReason</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:systolic.valueQuantity</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:systolic.valueQuantity.code</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:systolic.valueQuantity.system</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:systolic.valueQuantity.unit</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:systolic.valueQuantity.value</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:systolic.value[x]</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:systolic.value[x].code</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:systolic.value[x].system</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:systolic.value[x].unit</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.component:systolic.value[x].value</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -1448,6 +3292,7 @@
       <td></td>
       <td>True</td>
       <td>True</td>
+      <td></td>
       <td>True</td>
       <td>True</td>
       <td>True</td>
@@ -1462,6 +3307,8 @@
       <td>True</td>
       <td>True</td>
       <td>True</td>
+      <td></td>
+      <td></td>
       <td>True</td>
       <td>True</td>
       <td>True</td>
@@ -1469,9 +3316,70 @@
       <td>True</td>
       <td>True</td>
       <td>True</td>
+    </tr>
+    <tr>
+      <th>Observation.effective[x]:effectiveDateTime</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.effective[x]:effectivePeriod</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <th>Observation.encounter</th>
@@ -1506,7 +3414,7 @@
       <td></td>
     </tr>
     <tr>
-      <th>Observation.extension</th>
+      <th>Observation.extension:reason</th>
       <td></td>
       <td></td>
       <td></td>
@@ -2152,7 +4060,7 @@
       <td></td>
       <td>True</td>
       <td>True</td>
-      <td>True</td>
+      <td></td>
       <td>True</td>
       <td>True</td>
       <td>True</td>
@@ -2167,83 +4075,18 @@
       <td></td>
       <td>True</td>
       <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>Observation.value[x].code</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>True</td>
-      <td></td>
-      <td></td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td></td>
-      <td>True</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>True</td>
-      <td>True</td>
       <td></td>
       <td></td>
       <td>True</td>
       <td>True</td>
       <td>True</td>
       <td>True</td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.value[x].system</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>True</td>
-      <td></td>
-      <td></td>
       <td>True</td>
       <td>True</td>
-      <td>True</td>
-      <td></td>
-      <td>True</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>True</td>
-      <td>True</td>
-      <td></td>
-      <td></td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td></td>
-      <td></td>
       <td></td>
     </tr>
     <tr>
-      <th>Observation.value[x].unit</th>
-      <td></td>
+      <th>Observation.value[x]:valueCodeableConcept</th>
       <td></td>
       <td></td>
       <td></td>
@@ -2252,6 +4095,39 @@
       <td>True</td>
       <td></td>
       <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>Observation.value[x]:valueQuantity</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td>True</td>
       <td>True</td>
       <td>True</td>
       <td>True</td>
@@ -2274,7 +4150,103 @@
       <td></td>
     </tr>
     <tr>
-      <th>Observation.value[x].value</th>
+      <th>Observation.value[x]:valueQuantity.code</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.value[x]:valueQuantity.system</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.value[x]:valueQuantity.unit</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Observation.value[x]:valueQuantity.value</th>
       <td></td>
       <td></td>
       <td></td>
@@ -2341,6 +4313,30 @@
       <td>True</td>
       <td>True</td>
       <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>DiagnosticReport.category:LaboratorySlice</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>DiagnosticReport.category:laboratory</th>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>DiagnosticReport.category:us-core</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td>True</td>
     </tr>
     <tr>
@@ -2552,7 +4548,7 @@
       <td></td>
     </tr>
     <tr>
-      <th>List.extension</th>
+      <th>List.extension:clinicalSetting</th>
       <td></td>
       <td>True</td>
       <td>True</td>
@@ -2560,6 +4556,26 @@
       <td>True</td>
       <td>True</td>
       <td>True</td>
+    </tr>
+    <tr>
+      <th>List.extension:relatedProblemHeader</th>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>List.extension:warningCode</th>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <th>List.mode</th>
@@ -2767,7 +4783,7 @@
       <td></td>
     </tr>
     <tr>
-      <th>Slot.extension</th>
+      <th>Slot.extension:deliveryChannel</th>
       <td></td>
       <td>True</td>
     </tr>
@@ -2815,6 +4831,11 @@
     <tr>
       <th>MedicationRequest.category</th>
       <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>MedicationRequest.category:us-core</th>
+      <td></td>
       <td>True</td>
     </tr>
     <tr>
@@ -2868,7 +4889,7 @@
       <td>True</td>
     </tr>
     <tr>
-      <th>MedicationRequest.extension</th>
+      <th>MedicationRequest.extension:medicationAdherence</th>
       <td></td>
       <td>False</td>
     </tr>
@@ -3085,7 +5106,7 @@
       <td>True</td>
     </tr>
     <tr>
-      <th>MedicationStatement.extension</th>
+      <th>MedicationStatement.extension:lastIssueDate</th>
       <td></td>
       <td>True</td>
     </tr>
@@ -3162,9 +5183,21 @@
       <td></td>
     </tr>
     <tr>
-      <th>Appointment.extension</th>
+      <th>Appointment.extension:bookingOrganisation</th>
       <td></td>
       <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>Appointment.extension:deliveryChannel</th>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>Appointment.extension:practitionerRole</th>
+      <td></td>
+      <td></td>
       <td>True</td>
     </tr>
     <tr>
@@ -3236,6 +5269,12 @@
     <tr>
       <th>ServiceRequest.category</th>
       <td>True</td>
+      <td></td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>ServiceRequest.category:us-core</th>
+      <td></td>
       <td></td>
       <td>True</td>
     </tr>
@@ -3407,7 +5446,7 @@
       <td></td>
     </tr>
     <tr>
-      <th>Specimen.collection.extension</th>
+      <th>Specimen.collection.extension:fastingStatus</th>
       <td></td>
       <td>True</td>
       <td></td>
@@ -3504,9 +5543,15 @@
     </tr>
     <tr>
       <th>Location.identifier</th>
-      <td>True</td>
+      <td></td>
       <td></td>
       <td>True</td>
+    </tr>
+    <tr>
+      <th>Location.identifier:odsSiteCode</th>
+      <td>True</td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <th>Location.managingOrganization</th>
@@ -3577,6 +5622,22 @@
       <td>True</td>
     </tr>
     <tr>
+      <th>Condition.category:screening-assessment</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>Condition.category:us-core</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
       <th>Condition.clinicalStatus</th>
       <td>True</td>
       <td></td>
@@ -3609,12 +5670,60 @@
       <td></td>
     </tr>
     <tr>
-      <th>Condition.extension</th>
+      <th>Condition.extension:actualProblem</th>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Condition.extension:assertedDate</th>
+      <td></td>
+      <td></td>
       <td></td>
       <td>True</td>
       <td>True</td>
+    </tr>
+    <tr>
+      <th>Condition.extension:episode</th>
+      <td></td>
+      <td></td>
       <td>True</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Condition.extension:problemSignificance</th>
+      <td></td>
       <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Condition.extension:related</th>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Condition.extension:relatedClinicalContent</th>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Condition.extension:relatedProblemHeader</th>
+      <td></td>
+      <td>True</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <th>Condition.meta</th>
@@ -3747,6 +5856,11 @@
     <tr>
       <th>Practitioner.identifier.value</th>
       <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>Practitioner.identifier:NPI</th>
+      <td></td>
       <td>True</td>
     </tr>
     <tr>
@@ -3947,7 +6061,14 @@
       <td>True</td>
     </tr>
     <tr>
-      <th>AllergyIntolerance.extension</th>
+      <th>AllergyIntolerance.extension:allergyEnd</th>
+      <td></td>
+      <td></td>
+      <td>True</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>AllergyIntolerance.extension:encounter</th>
       <td></td>
       <td></td>
       <td>True</td>
@@ -4104,7 +6225,7 @@
       <td></td>
     </tr>
     <tr>
-      <th>Schedule.extension</th>
+      <th>Schedule.extension:practitionerRole</th>
       <td></td>
       <td>True</td>
     </tr>
@@ -4290,7 +6411,11 @@
       <td>False</td>
     </tr>
     <tr>
-      <th>QuestionnaireResponse.extension</th>
+      <th>QuestionnaireResponse.extension:completionMode</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>QuestionnaireResponse.extension:signature</th>
       <td>False</td>
     </tr>
     <tr>
@@ -4306,7 +6431,11 @@
       <td>True</td>
     </tr>
     <tr>
-      <th>QuestionnaireResponse.item.answer.extension</th>
+      <th>QuestionnaireResponse.item.answer.extension:itemAnswerMedia</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>QuestionnaireResponse.item.answer.extension:ordinalValue</th>
       <td>False</td>
     </tr>
     <tr>
@@ -4318,7 +6447,11 @@
       <td>True</td>
     </tr>
     <tr>
-      <th>QuestionnaireResponse.item.extension</th>
+      <th>QuestionnaireResponse.item.extension:ItemSignature</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>QuestionnaireResponse.item.extension:itemMedia</th>
       <td>False</td>
     </tr>
     <tr>
@@ -4342,7 +6475,11 @@
       <td>True</td>
     </tr>
     <tr>
-      <th>QuestionnaireResponse.questionnaire.extension</th>
+      <th>QuestionnaireResponse.questionnaire.extension:questionnaireDisplay</th>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>QuestionnaireResponse.questionnaire.extension:url</th>
       <td>True</td>
     </tr>
     <tr>
@@ -4545,7 +6682,11 @@
       <td>True</td>
     </tr>
     <tr>
-      <th>Coverage.identifier.type</th>
+      <th>Coverage.identifier:memberid</th>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>Coverage.identifier:memberid.type</th>
       <td>True</td>
     </tr>
     <tr>
@@ -4581,11 +6722,27 @@
       <td>True</td>
     </tr>
     <tr>
-      <th>Coverage.class.value</th>
+      <th>Coverage.class:group</th>
       <td>True</td>
     </tr>
     <tr>
-      <th>Coverage.class.name</th>
+      <th>Coverage.class:group.value</th>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>Coverage.class:group.name</th>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>Coverage.class:plan</th>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>Coverage.class:plan.value</th>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>Coverage.class:plan.name</th>
       <td>True</td>
     </tr>
   </tbody>
@@ -4661,6 +6818,10 @@
       <td>True</td>
     </tr>
     <tr>
+      <th>CarePlan.category:AssessPlan</th>
+      <td>True</td>
+    </tr>
+    <tr>
       <th>CarePlan.subject</th>
       <td>True</td>
     </tr>
@@ -4704,6 +6865,22 @@
     </tr>
     <tr>
       <th>Provenance.agent.onBehalfOf</th>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>Provenance.agent:ProvenanceAuthor</th>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>Provenance.agent:ProvenanceAuthor.type</th>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>Provenance.agent:ProvenanceTransmitter</th>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>Provenance.agent:ProvenanceTransmitter.type</th>
       <td>True</td>
     </tr>
   </tbody>
