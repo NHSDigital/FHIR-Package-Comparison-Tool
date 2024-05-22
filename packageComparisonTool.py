@@ -71,7 +71,7 @@ def find_attributes(json_data, Type, attribute, attribute_dict=None, parent_keys
     if isinstance(json_data, dict):
         element = ''
         for key, value in json_data.items():
-            if key == 'path' and Type in value:
+            if key == 'id' and Type in value:
                 element = value
             elif key == attribute and value !=ignore:
                 attribute_path = f"{parent_keys}.{key}" if parent_keys else key
