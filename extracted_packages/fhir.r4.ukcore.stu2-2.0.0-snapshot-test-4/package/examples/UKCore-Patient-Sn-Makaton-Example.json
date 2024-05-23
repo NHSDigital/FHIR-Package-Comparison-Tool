@@ -1,1 +1,0 @@
-{"resourceType":"Patient","id":"UKCore-Patient-Sn-Makaton-Example","name":[{"use":"official","family":"JONES","given":["Jason"]}],"communication":[{"language":{"coding":[{"system":"urn:ietf:bcp:47","code":"bfi","display":"British Sign Language"},{"system":"http://snomed.info/sct","code":"703963007","display":"Makaton vocabulary"}]}}]}

@@ -1,1 +1,0 @@
-{"resourceType":"Patient","id":"UKCore-Patient-Extension-BirthSex-Example","extension":[{"url":"https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex","valueCodeableConcept":{"coding":[{"system":"https://fhir.hl7.org.uk/CodeSystem/UKCore-BirthSex","code":"F","display":"Female"}]}}]}
