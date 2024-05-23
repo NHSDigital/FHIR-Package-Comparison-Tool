@@ -146,6 +146,9 @@ for path in glob.glob(extract_package_path+'**/package/*.json', recursive=True):
         for x in warnings:
             print(x)
 
+table_min_max = dict(sorted(table_min_max.items()))
+table_valueSet = dict(sorted(table_valueSet.items()))
+
 def dict_to_dataframe(data_dict):
     dfs = {}
     for key, value in data_dict.items():
