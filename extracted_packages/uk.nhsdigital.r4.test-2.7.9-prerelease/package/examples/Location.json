@@ -1,1 +1,0 @@
-{"resourceType":"Location","id":"8a5d7d67-64fb-44ec-9802-2dc214bb3dcb","identifier":[{"use":"official","system":"https://fhir.nhs.uk/Id/ods-organization-code","value":"RBA11"}],"status":"active","mode":"instance","address":{"use":"work","line":["MUSGROVE PARK HOSPITAL"],"city":"TAUNTON","postalCode":"TA1 5DA","country":"NLD"}}

@@ -1,1 +1,0 @@
-{"resourceType":"NamingSystem","id":"read-v2","name":"READV2","status":"draft","kind":"codesystem","date":"2020-01-02","publisher":"HL7 UK","responsible":"HL7 UK","description":"Read Codes version 2","usage":"UK Primary Care","uniqueId":[{"type":"uri","value":"http://read.info/readv2","preferred":true}]}

@@ -1,1 +1,0 @@
-{"resourceType":"NamingSystem","id":"faa9e944-fcc4-4ff3-b53e-0c0be07d6a3c","name":"ERShealthcareserice","status":"draft","kind":"identifier","date":"2022-01-13","publisher":"NHS Digital","responsible":"NHS Digital","description":"identifier of a healthcare service in eRS","usage":"EPS","uniqueId":[{"type":"uri","value":"https://fhir.nhs.uk/Id/ers-service","preferred":true}]}

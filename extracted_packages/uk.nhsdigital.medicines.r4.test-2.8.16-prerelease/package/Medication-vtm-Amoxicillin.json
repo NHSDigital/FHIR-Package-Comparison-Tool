@@ -1,1 +1,0 @@
-{"resourceType":"Medication","id":"vtm-amoxicillin","code":{"coding":[{"system":"http://snomed.info/sct","code":"27658006","display":"Amoxicillin-containing product"}]},"form":{"coding":[{"system":"http://snomed.info/sct","code":"385049006","display":"Capsule"}]}}
