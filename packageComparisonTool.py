@@ -58,35 +58,44 @@ def checkIfProfile(jsonFile):
         return None
 
 '''Finds all values with key not equal to 0 (also add *??) '''
-def find_attributes(json_data, Type, attribute, attribute_dict=None, parent_keys=""):
-    if attribute == 'min':
-        ignore = 0
-    elif attribute == 'max':
-        ignore = '*'
-    else:
-        ignore = ''
+'''Finds all values with key not equal to 0 (also add *??) '''
+'''Finds all values with key not equal to 0 (also add *??) '''
+def find_attributes_min_max(json_data, attribute_dict=None):
     if attribute_dict is None:
         attribute_dict = {}
 
     if isinstance(json_data, dict):
-        element = ''
-        for key, value in json_data.items():
-            if key == 'id' and Type in value:
-                element = value
-            elif element != '' and key == attribute and value !=ignore:
-                attribute_path = f"{parent_keys}.{key}" if parent_keys else key
-                attribute_dict[element] = str(value)
-            elif isinstance(value, (dict, list)):
-                if parent_keys:
-                    find_attributes(value, Type, attribute, attribute_dict, f"{parent_keys}.{key}")
-                else:
-                    find_attributes(value, Type, attribute, attribute_dict, key)
-    elif isinstance(json_data, list):
-        for index, item in enumerate(json_data):
-            if parent_keys:
-                find_attributes(item, Type, attribute, attribute_dict, f"{parent_keys}[{index}]")
+        if 'id' in json_data and ('min' in json_data or 'max' in json_data):
+            #result[json_data['id']] = []
+            if 'min' in json_data:
+                attribute_dict[json_data['id']] = str(json_data['min'])+'..'
             else:
-                find_attributes(item, Type, attribute, attribute_dict, f"[{index}]")
+                attribute_dict[json_data['id']] = '..'
+            if 'max' in json_data:
+                attribute_dict[json_data['id']] = attribute_dict[json_data['id']]+str(json_data['max'])
+        for key, value in json_data.items():\
+            find_attributes_min_max(value, attribute_dict)
+    elif isinstance(json_data, list):
+        for item in json_data:
+            find_attributes_min_max(item, attribute_dict)
+
+    return attribute_dict
+
+def find_attributes_valueSet(json_data, attribute_dict=None):
+    if attribute_dict is None:
+        attribute_dict = {}
+
+    if isinstance(json_data, dict):
+        if 'id' in json_data and ('binding' in json_data):
+            try:
+                attribute_dict[json_data['id']] = f"{json_data['binding']['strength']}\n{json_data['binding']['valueSet']}"
+            except:
+                attribute_dict[json_data['id']] = f"{json_data['binding']['strength']}"
+        for key, value in json_data.items():\
+            find_attributes_valueSet(value, attribute_dict)
+    elif isinstance(json_data, list):
+        for item in json_data:
+            find_attributes_valueSet(item, attribute_dict)
 
     return attribute_dict
     
@@ -108,8 +117,8 @@ def checkIfSTU3(path,jsonFile):
             print(f"STU3-R4 Conversion Error: {response.status_code} - {response.reason}")
     return jsonFile
 
-table = {}
-attribute = os.environ['INPUT_ELEMENT']
+table_min_max = {}
+table_valueSet = {}
 for path in glob.glob(extract_package_path+'**/package/*.json', recursive=True):
     name = path.split('/')[-1].split('.')[0]
     warnings = []
@@ -119,17 +128,26 @@ for path in glob.glob(extract_package_path+'**/package/*.json', recursive=True):
     Type = checkIfProfile(jsonFile)
     if Type != None:
         jsonFile = checkIfSTU3(path,jsonFile)
-        if Type not in table.keys():
-            table[Type] = []
-        ''' add filename to dict '''
-        attribute_dict = find_attributes(jsonFile, Type, attribute)
-        dic = {}
-        dic[name]=attribute_dict
-        table[Type].append(dic) 
+        if Type not in table_min_max.keys():
+            table_min_max[Type] = []
+        attribute_dict_min_max = find_attributes_min_max(jsonFile)
+        dic_min_max = {}
+        dic_min_max[name]=attribute_dict_min_max
+        table_min_max[Type].append(dic_min_max)
+        
+        if Type not in table_valueSet.keys():
+            table_valueSet[Type] = []
+        attribute_dict_valueSet = find_attributes_valueSet(jsonFile)
+        dic_valueSet = {}
+        dic_valueSet[name]=attribute_dict_valueSet
+        table_valueSet[Type].append(dic_valueSet)
     if warnings:
         print(os.path.splitext(os.path.basename(tgz_package))[0])
         for x in warnings:
             print(x)
+
+table_min_max = dict(sorted(table_min_max.items()))
+table_valueSet = dict(sorted(table_valueSet.items()))
 
 def dict_to_dataframe(data_dict):
     dfs = {}
@@ -148,54 +166,60 @@ def dict_to_dataframe(data_dict):
     return dfs
 
 # Convert each dictionary into a DataFrame
-dataframes = dict_to_dataframe(table)
+min_max = dict_to_dataframe(table_min_max)
+valueSet = dict_to_dataframe(table_valueSet)
 
 if os.path.exists("index.html"):
     os.remove("index.html")
     
 ''' HTML FILE CREATION '''
-html_file = open("index.html","w")
+dataframes = {'Cardinality':min_max,'ValueSet_binding':valueSet}
+for key,value in dataframes.items():
+    if os.path.exists(f"_{key}.html"):
+        os.remove(f"_{key}.html")
 
-#HTML(dataframes.to_html(classes='table table-stripped'))
-html_file.write('''
-<html>
-<head>
-<style>
+    ''' HTML FILE CREATION '''
+    html_file = open(f"_{key}.html","w")
 
-    h2 {
-        text-align: center;
-        font-family: Helvetica, Arial, sans-serif;
-    }
-    table { 
-        margin-left: auto;
-        margin-right: auto;
-    }
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-        text-align: center;
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 90%;
-    }
-    table tbody tr:hover {
-        background-color: #dddddd;
-    }
-    .wide {
-        width: 90%; 
-    }
+    #HTML(dataframes.to_html(classes='table table-stripped'))
+    html_file.write('''
+    <html>
+    <head>
+    <style>
 
-</style>
-</head>
-<body>
-<h1></h1>
-''')
-html_file.write(f"<title>Table for the element: '{attribute}'</title><h1>Table for the element: '{attribute}'</h1>")
-for key, df in dataframes.items():
-    
-    html_file.write(f"<h2>{key}</h2>\n")
-    html_file.write(df.to_html(classes=["table-bordered", "table-striped", "table-hover"]))
-html_file.write("</body></html>")
-html_file.close()
+        h2 {
+            text-align: center;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        table { 
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+            text-align: center;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 90%;
+        }
+        table tbody tr:hover {
+            background-color: #dddddd;
+        }
+        .wide {
+            width: 90%; 
+        }
+
+    </style>
+    </head>
+    <body>
+    <h1></h1>
+    ''')
+    html_file.write(f"<title>Table for the element: '{key}'</title><h1>Table for the element: '{key}'</h1>")
+    for profile, df in value.items():
+        html_file.write(f"<h2>{profile}</h2>\n")
+        html_file.write(df.to_html(classes=["table-bordered", "table-striped", "table-hover"]).replace("\\n","<br>"))
+    html_file.write("</body></html>")
+    html_file.close()
