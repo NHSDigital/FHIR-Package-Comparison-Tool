@@ -1,0 +1,1 @@
+{"resourceType":"PractitionerRole","id":"UKCore-PractitionerRole-Sn-Organization-Code-Example","identifier":[{"system":"https://fhir.nhs.uk/Id/sds-role-profile-id","value":"100334993514"}],"organization":{"identifier":{"system":"https://fhir.nhs.uk/Id/ods-organization-code","value":"RD8"},"display":"MILTON KEYNES UNIVERSITY HOSPITAL NHS FOUNDATION TRUST"}}

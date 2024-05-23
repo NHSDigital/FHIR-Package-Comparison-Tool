@@ -1,0 +1,1 @@
+{"resourceType":"Medication","id":"UKCore-Medication-TimololVTM-Example","code":{"coding":[{"system":"https://dmd.nhs.uk","code":"777773007","display":"Timolol"}]},"form":{"coding":[{"system":"http://snomed.info/sct","code":"17960711000001109","display":"Ear/eye drops solution"}]}}
