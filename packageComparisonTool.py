@@ -57,9 +57,7 @@ def checkIfProfile(jsonFile):
         print(jsonFile['url'],e)
         return None
 
-'''Finds all values with key not equal to 0 (also add *??) '''
-'''Finds all values with key not equal to 0 (also add *??) '''
-'''Finds all values with key not equal to 0 (also add *??) '''
+
 def find_attributes_min_max(json_data, attribute_dict=None):
     if attribute_dict is None:
         attribute_dict = {}
