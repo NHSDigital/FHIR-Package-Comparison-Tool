@@ -1,5 +1,5 @@
 # FHIR-Package-Comparison-Tool
-*This repository is maintained by [Interoperability Team]( https://nhsd-confluence.digital.nhs.uk/pages/viewpage.action?spaceKey=IOPS&title=Interoperability+Standards) Any queries contact us via [email](interoperabilityteam@nhs.net).*
+*This repository is maintained by [Interoperability Team]( https://nhsd-confluence.digital.nhs.uk/pages/viewpage.action?spaceKey=IOPS&title=Interoperability+Standards). Any queries contact us via [email](interoperabilityteam@nhs.net).*
 
 ## A tool to compare FHIR elements between different packages
 
