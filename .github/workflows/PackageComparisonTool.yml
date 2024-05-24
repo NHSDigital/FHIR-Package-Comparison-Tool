@@ -4,11 +4,11 @@ name: Package Comparison Tool
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   workflow_dispatch:
-    #inputs:
-      #FHIRelement:
-        #description: 'element to compare, e.g. min'
-        #required: true
-        #default: 'min'
+    inputs:
+      FHIRelement:
+        description: 'FHIR elements to compare, separated by a space, e.g. min max. Cardinality, ValueSet binding & mustSupport are created as default'
+
+
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
