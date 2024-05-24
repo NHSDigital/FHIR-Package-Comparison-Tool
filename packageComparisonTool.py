@@ -176,6 +176,8 @@ for path in glob.glob(extract_package_path+'**/package/*.json', recursive=True):
 
 table_min_max = dict(sorted(table_min_max.items()))
 table_valueSet = dict(sorted(table_valueSet.items()))
+for v in custom_input_dict.values():
+    v = dict(sorted(v.items()))
 
 def dict_to_dataframe(data_dict):
     dfs = {}
