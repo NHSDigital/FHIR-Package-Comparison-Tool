@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       fhir-element:
-        description: 'FHIR elements to compare, separated by a space, e.g. min max. Cardinality, ValueSet binding & mustSupport are created as default'
+        description: 'FHIR elements to compare, separated by a comma, e.g. min,max. Cardinality, ValueSet binding & mustSupport are created as default'
 
 
 
