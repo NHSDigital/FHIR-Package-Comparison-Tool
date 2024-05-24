@@ -4,11 +4,11 @@ name: Package Comparison Tool
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   workflow_dispatch:
-    #inputs:
-      #FHIRelement:
-        #description: 'element to compare, e.g. min'
-        #required: true
-        #default: 'min'
+    inputs:
+      fhir-element:
+        description: 'FHIR elements to compare, separated by a comma, e.g. min,max. Cardinality, ValueSet binding & mustSupport are created as default'
+
+
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -34,7 +34,7 @@ jobs:
           pip install -r ./requirements.txt
 
       - name: Execute Naming Convention Check
-        run: INPUT_ELEMENT=${{ github.event.inputs.FHIRelement }} python packageComparisonTool.py
+        run: INPUT_ELEMENT=${{ github.event.inputs.fhir-element }} python packageComparisonTool.py
          
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
