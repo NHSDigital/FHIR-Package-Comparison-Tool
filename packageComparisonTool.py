@@ -57,9 +57,7 @@ def checkIfProfile(jsonFile):
         print(jsonFile['url'],e)
         return None
 
-'''Finds all values with key not equal to 0 (also add *??) '''
-'''Finds all values with key not equal to 0 (also add *??) '''
-'''Finds all values with key not equal to 0 (also add *??) '''
+
 def find_attributes_min_max(json_data, attribute_dict=None):
     if attribute_dict is None:
         attribute_dict = {}
@@ -98,6 +96,21 @@ def find_attributes_valueSet(json_data, attribute_dict=None):
             find_attributes_valueSet(item, attribute_dict)
 
     return attribute_dict
+
+def find_attributes_x(json_data, custom_key, attribute_dict=None):
+    if attribute_dict is None:
+        attribute_dict = {}
+
+    if isinstance(json_data, dict):
+        if 'id' in json_data and custom_key in json_data:
+            attribute_dict[json_data['id']] = str(json_data[custom_key])
+        for key, value in json_data.items():\
+            find_attributes_x(value, custom_key, attribute_dict)
+    elif isinstance(json_data, list):
+        for item in json_data:
+            find_attributes_x(item, custom_key, attribute_dict)
+
+    return attribute_dict
     
 def checkIfSTU3(path,jsonFile):
     url = 'https://3cdzg7kbj4.execute-api.eu-west-2.amazonaws.com/poc/Conformance/FHIR/STU3/$convertR4'
@@ -119,6 +132,11 @@ def checkIfSTU3(path,jsonFile):
 
 table_min_max = {}
 table_valueSet = {}
+custom_input_list = ('mustSupport,'+os.environ['INPUT_ELEMENT']).split(',')
+custom_input_dict = {}
+for l in custom_input_list:
+    custom_input_dict[l] = {}
+    
 for path in glob.glob(extract_package_path+'**/package/*.json', recursive=True):
     name = path.split('/')[-1].split('.')[0]
     warnings = []
@@ -141,6 +159,16 @@ for path in glob.glob(extract_package_path+'**/package/*.json', recursive=True):
         dic_valueSet = {}
         dic_valueSet[name]=attribute_dict_valueSet
         table_valueSet[Type].append(dic_valueSet)
+
+        for custom_key, custom_value in custom_input_dict.items():
+            print(custom_key,custom_value)
+            if Type not in custom_value:
+                custom_value[Type] = []
+            attribute_dict_x = find_attributes_x(jsonFile, custom_key)
+            dic_x = {}
+            dic_x[name]=attribute_dict_x
+            custom_value[Type].append(dic_x)
+        
     if warnings:
         print(os.path.splitext(os.path.basename(tgz_package))[0])
         for x in warnings:
@@ -148,6 +176,8 @@ for path in glob.glob(extract_package_path+'**/package/*.json', recursive=True):
 
 table_min_max = dict(sorted(table_min_max.items()))
 table_valueSet = dict(sorted(table_valueSet.items()))
+for v in custom_input_dict.values():
+    v = dict(sorted(v.items()))
 
 def dict_to_dataframe(data_dict):
     dfs = {}
@@ -168,12 +198,17 @@ def dict_to_dataframe(data_dict):
 # Convert each dictionary into a DataFrame
 min_max = dict_to_dataframe(table_min_max)
 valueSet = dict_to_dataframe(table_valueSet)
+custom_dataframe = {}
+for k, v in custom_input_dict.items():
+    custom_dataframe[k] = dict_to_dataframe(v)
 
 if os.path.exists("index.html"):
     os.remove("index.html")
     
 ''' HTML FILE CREATION '''
 dataframes = {'Cardinality':min_max,'ValueSet_binding':valueSet}
+dataframes = dataframes | custom_dataframe
+
 for key,value in dataframes.items():
     if os.path.exists(f"_{key}.html"):
         os.remove(f"_{key}.html")
