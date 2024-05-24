@@ -132,7 +132,7 @@ def checkIfSTU3(path,jsonFile):
 
 table_min_max = {}
 table_valueSet = {}
-custom_input_list = ('mustSupport '+os.environ['INPUT_ELEMENT']).split()
+custom_input_list = ('mustSupport,'+os.environ['INPUT_ELEMENT']).split(',')
 custom_input_dict = {}
 for l in custom_input_list:
     custom_input_dict[l] = {}
