@@ -5,7 +5,7 @@ on:
   # Triggers the workflow on push or pull request events but only for the master branch
   workflow_dispatch:
     inputs:
-      FHIRelement:
+      fhir-element:
         description: 'FHIR elements to compare, separated by a space, e.g. min max. Cardinality, ValueSet binding & mustSupport are created as default'
 
 
