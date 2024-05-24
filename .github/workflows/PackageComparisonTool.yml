@@ -34,7 +34,7 @@ jobs:
           pip install -r ./requirements.txt
 
       - name: Execute Naming Convention Check
-        run: INPUT_ELEMENT=${{ github.event.inputs.FHIRelement }} python packageComparisonTool.py
+        run: INPUT_ELEMENT=${{ github.event.inputs.fhir-element }} python packageComparisonTool.py
          
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
