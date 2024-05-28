@@ -44,9 +44,9 @@ def open_json_file(path, warnings):
 def check_if_profile(jsonFile):
     '''Will return empty for any retired assets'''
     try:
-        if 'resource' in jsonFile and jsonFile['resource']!='Extension' and jsonFile['resourceresource'] == 'StructureDefinition':
-            print(jsonFile['url'],jsonFile['resourceresource'])
-            return jsonFile['resource']
+        if 'type' in jsonFile and jsonFile['type']!='Extension' and jsonFile['resourceType'] == 'StructureDefinition':
+            print(jsonFile['url'],jsonFile['resourceType'])
+            return jsonFile['type']
     except KeyError as e:
         print(jsonFile['url'],e)
         return None
@@ -110,7 +110,7 @@ def check_if_stu3(path,jsonFile):
 
     headers = {
         'accept': 'application/fhir+json',
-        'Content-resource': 'application/fhir+json'
+        'Content-Type': 'application/fhir+json'
     }
 
     if '3' in jsonFile['fhirVersion']:
