@@ -209,7 +209,7 @@ dataframes = dataframes | custom_dataframe
 
 ''' Create xlsx files '''
 for title, title_df in dataframes.items():
-    with pd.ExcelWriter(title+'.xlsx') as writer:
+    with pd.ExcelWriter('_'+title+'.xlsx') as writer:
         for k, v in title_df.items():
             try:
                 v.to_excel(writer,sheet_name=k)
