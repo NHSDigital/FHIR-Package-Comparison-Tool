@@ -145,31 +145,31 @@ for path in glob.glob(extract_package_path+'**/package/*.json', recursive=True):
     if 'examples' in name or name == "package":
         continue
     jsonFile, warnings = open_json_file(path, warnings)
-    Type = check_if_profile(jsonFile)
-    if Type != None:
+   resource= check_if_profile(jsonFile)
+    ifresource!= None:
         jsonFile = check_if_stu3(path,jsonFile)
-        if Type not in table_min_max.keys():
-            table_min_max[Type] = []
+        ifresourcenot in table_min_max.keys():
+            table_min_max[resource] = []
         attribute_dict_min_max = find_attributes_min_max(jsonFile)
         dic_min_max = {}
         dic_min_max[name]=attribute_dict_min_max
-        table_min_max[Type].append(dic_min_max)
+        table_min_max[resource].append(dic_min_max)
         
-        if Type not in table_valueSet.keys():
-            table_valueSet[Type] = []
+        ifresourcenot in table_valueSet.keys():
+            table_valueSet[resource] = []
         attribute_dict_valueSet = find_attributes_valueSet(jsonFile)
         dic_valueSet = {}
         dic_valueSet[name]=attribute_dict_valueSet
-        table_valueSet[Type].append(dic_valueSet)
+        table_valueSet[resource].append(dic_valueSet)
 
         for custom_key, custom_value in custom_input_dict.items():
             print(custom_key,custom_value)
-            if Type not in custom_value:
-                custom_value[Type] = []
+            ifresourcenot in custom_value:
+                custom_value[resource] = []
             attribute_dict_x = find_attributes_x(jsonFile, custom_key)
             dic_x = {}
             dic_x[name]=attribute_dict_x
-            custom_value[Type].append(dic_x)
+            custom_value[resource].append(dic_x)
         
     if warnings:
         print(os.path.splitext(os.path.basename(tgz_package))[0])
