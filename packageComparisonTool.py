@@ -1,3 +1,9 @@
+"""
+This script extracts all files from the FHIR packages, located in ./packages, filters for Profiles only and gathers the information for cardinality, mustSuport and ValueSet bindings. This information is 
+presented in an HTML file (_cardinality.html, _ValueSet.html, _mustSupprt.html), which each contain a number of tables, one for each Profile. STU3 files will be converted to R4 before checking by posting 
+the profile to a FHIR server using the $convertR4. Custom elements can be added via GitHub actions, each one seperated by a comma (,).
+"""
+
 import tarfile
 import os
 import requests
@@ -9,34 +15,22 @@ from functools import reduce
 from IPython.display import HTML
 import pathlib
 
+directory = './packages'
+extract_package_path = './extracted_packages/'
+
 def extract_tar_gz(tar_gz_file, extract_path):
     try:
-        # Open the tar.gz file
         with tarfile.open(tar_gz_file, 'r:gz') as tar:
-            # Extract all contents
             tar.extractall(path=extract_path)
         print("Extraction successful!")
     except Exception as e:
         print(f"Extraction failed: {e}")
 
-directory = './packages'
-extract_package_path = './extracted_packages/'
-
 def find_tgz_packages(directory):
     tgz_files = glob.glob(directory+'/*.tgz')
     return tgz_files
-
-tgz_packages = find_tgz_packages(directory)
-
-# Extract each .tgz package
-print("Packages Extracted")
-for tgz_package in tgz_packages:
-    extract_path = extract_package_path+os.path.splitext(os.path.basename(tgz_package))[0]
-    extract_tar_gz(tgz_package, extract_path)
-    print(tgz_package)
-    
-    ''' open each file '''
-def openJSONFile(path, warnings):
+ 
+def open_json_file(path, warnings):
     ''' loads JSON File returns dict named contents '''
     try:
         with open(path, 'r',encoding="utf8") as j:
@@ -46,9 +40,8 @@ def openJSONFile(path, warnings):
         return {}, warnings
     return jsonFile, warnings
 
-'''For each file check the element kind is present and not equal to extension'''
-def checkIfProfile(jsonFile):
-    '''Will return empty for any retired assets'''
+def check_if_profile(jsonFile):
+    '''For each file check the element kind is present and not equal to extension. Will return empty for any retired assets'''
     try:
         if 'type' in jsonFile and jsonFile['type']!='Extension' and jsonFile['resourceType'] == 'StructureDefinition':
             print(jsonFile['url'],jsonFile['resourceType'])
@@ -57,14 +50,12 @@ def checkIfProfile(jsonFile):
         print(jsonFile['url'],e)
         return None
 
-
 def find_attributes_min_max(json_data, attribute_dict=None):
     if attribute_dict is None:
         attribute_dict = {}
 
     if isinstance(json_data, dict):
         if 'id' in json_data and ('min' in json_data or 'max' in json_data):
-            #result[json_data['id']] = []
             if 'min' in json_data:
                 attribute_dict[json_data['id']] = str(json_data['min'])+'..'
             else:
@@ -76,7 +67,6 @@ def find_attributes_min_max(json_data, attribute_dict=None):
     elif isinstance(json_data, list):
         for item in json_data:
             find_attributes_min_max(item, attribute_dict)
-
     return attribute_dict
 
 def find_attributes_valueSet(json_data, attribute_dict=None):
@@ -94,7 +84,6 @@ def find_attributes_valueSet(json_data, attribute_dict=None):
     elif isinstance(json_data, list):
         for item in json_data:
             find_attributes_valueSet(item, attribute_dict)
-
     return attribute_dict
 
 def find_attributes_x(json_data, custom_key, attribute_dict=None):
@@ -109,10 +98,9 @@ def find_attributes_x(json_data, custom_key, attribute_dict=None):
     elif isinstance(json_data, list):
         for item in json_data:
             find_attributes_x(item, custom_key, attribute_dict)
-
     return attribute_dict
     
-def checkIfSTU3(path,jsonFile):
+def check_if_stu3(path,jsonFile):
     url = 'https://3cdzg7kbj4.execute-api.eu-west-2.amazonaws.com/poc/Conformance/FHIR/STU3/$convertR4'
 
     headers = {
@@ -130,44 +118,55 @@ def checkIfSTU3(path,jsonFile):
             print(f"STU3-R4 Conversion Error: {response.status_code} - {response.reason}")
     return jsonFile
 
+
+''' Find and extract each FHIR package '''
+tgz_packages = find_tgz_packages(directory)
+print("Packages Extracted")
+for tgz_package in tgz_packages:
+    extract_path = extract_package_path+os.path.splitext(os.path.basename(tgz_package))[0]
+    extract_tar_gz(tgz_package, extract_path)
+    print(tgz_package)
+    
+'''create dictionaries for each of the elements to check. Each dict will look like: {Resource:[{Profile:{id:value,...}},...],...}'''
 table_min_max = {}
 table_valueSet = {}
 custom_input_list = ('mustSupport,'+os.environ['INPUT_ELEMENT']).split(',')
 custom_input_dict = {}
 for l in custom_input_list:
     custom_input_dict[l] = {}
-    
+
+''' filter for profiles only '''
 for path in glob.glob(extract_package_path+'**/package/*.json', recursive=True):
     name = path.split('/')[-1].split('.')[0]
     warnings = []
     if 'examples' in name or name == "package":
         continue
-    jsonFile, warnings = openJSONFile(path, warnings)
-    Type = checkIfProfile(jsonFile)
-    if Type != None:
-        jsonFile = checkIfSTU3(path,jsonFile)
-        if Type not in table_min_max.keys():
-            table_min_max[Type] = []
+    jsonFile, warnings = open_json_file(path, warnings)
+    resource = check_if_profile(jsonFile)
+    if resource != None:
+        jsonFile = check_if_stu3(path,jsonFile)
+        if resource not in table_min_max.keys():
+            table_min_max[resource] = []
         attribute_dict_min_max = find_attributes_min_max(jsonFile)
         dic_min_max = {}
         dic_min_max[name]=attribute_dict_min_max
-        table_min_max[Type].append(dic_min_max)
+        table_min_max[resource].append(dic_min_max)
         
-        if Type not in table_valueSet.keys():
-            table_valueSet[Type] = []
+        if resource not in table_valueSet.keys():
+            table_valueSet[resource] = []
         attribute_dict_valueSet = find_attributes_valueSet(jsonFile)
         dic_valueSet = {}
         dic_valueSet[name]=attribute_dict_valueSet
-        table_valueSet[Type].append(dic_valueSet)
+        table_valueSet[resource].append(dic_valueSet)
 
         for custom_key, custom_value in custom_input_dict.items():
             print(custom_key,custom_value)
-            if Type not in custom_value:
-                custom_value[Type] = []
+            if resource not in custom_value:
+                custom_value[resource] = []
             attribute_dict_x = find_attributes_x(jsonFile, custom_key)
             dic_x = {}
             dic_x[name]=attribute_dict_x
-            custom_value[Type].append(dic_x)
+            custom_value[resource].append(dic_x)
         
     if warnings:
         print(os.path.splitext(os.path.basename(tgz_package))[0])
@@ -186,7 +185,6 @@ def dict_to_dataframe(data_dict):
             list_of_dfs = []
             for profile in range(len(value)):
                 list_of_dfs.append(pd.DataFrame.from_dict(value[profile], orient='index').T)
-            #dfs[key] = pd.concat(list_of_dfs).replace([np.nan, -np.inf], "")
             try:
                 dfs[key] = reduce(lambda  left,right: pd.merge(left,right, left_index=True, right_index=True, how='outer'), list_of_dfs).fillna('')
             except:
@@ -195,7 +193,7 @@ def dict_to_dataframe(data_dict):
             dfs[key] = pd.DataFrame.from_dict(value[0], orient='index').T
     return dfs
 
-# Convert each dictionary into a DataFrame
+''' Convert each dictionary into a DataFrame '''
 min_max = dict_to_dataframe(table_min_max)
 valueSet = dict_to_dataframe(table_valueSet)
 custom_dataframe = {}
@@ -205,18 +203,17 @@ for k, v in custom_input_dict.items():
 if os.path.exists("index.html"):
     os.remove("index.html")
     
-''' HTML FILE CREATION '''
+''' Create dataframes '''
 dataframes = {'Cardinality':min_max,'ValueSet_binding':valueSet}
 dataframes = dataframes | custom_dataframe
 
+''' Create html files '''
 for key,value in dataframes.items():
     if os.path.exists(f"_{key}.html"):
         os.remove(f"_{key}.html")
 
-    ''' HTML FILE CREATION '''
     html_file = open(f"_{key}.html","w")
 
-    #HTML(dataframes.to_html(classes='table table-stripped'))
     html_file.write('''
     <html>
     <head>
