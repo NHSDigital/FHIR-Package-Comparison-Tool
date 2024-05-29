@@ -38,7 +38,7 @@ for tgz_package in tgz_packages:
     extract_tar_gz(tgz_package, extract_path)
     print(tgz_package)
     
-def openJSONFile(path, warnings):
+def open_json_file(path, warnings):
     ''' loads JSON File returns dict named contents '''
     try:
         with open(path, 'r',encoding="utf8") as j:
@@ -48,7 +48,7 @@ def openJSONFile(path, warnings):
         return {}, warnings
     return jsonFile, warnings
 
-def checkIfProfile(jsonFile):
+def check_if_profile(jsonFile):
     '''For each file check the element kind is present and not equal to extension. Will return empty for any retired assets'''
     try:
         if 'type' in jsonFile and jsonFile['type']!='Extension' and jsonFile['resourceType'] == 'StructureDefinition':
@@ -112,7 +112,7 @@ def find_attributes_x(json_data, custom_key, attribute_dict=None):
 
     return attribute_dict
     
-def checkIfSTU3(path,jsonFile):
+def check_if_stu3(path,jsonFile):
     url = 'https://3cdzg7kbj4.execute-api.eu-west-2.amazonaws.com/poc/Conformance/FHIR/STU3/$convertR4'
 
     headers = {
@@ -144,10 +144,10 @@ for path in glob.glob(extract_package_path+'**/package/*.json', recursive=True):
     warnings = []
     if 'examples' in name or name == "package":
         continue
-    jsonFile, warnings = openJSONFile(path, warnings)
-    Type = checkIfProfile(jsonFile)
+    jsonFile, warnings = open_json_file(path, warnings)
+    Type = check_if_profile(jsonFile)
     if Type != None:
-        jsonFile = checkIfSTU3(path,jsonFile)
+        jsonFile = check_if_stu3(path,jsonFile)
         if Type not in table_min_max.keys():
             table_min_max[Type] = []
         attribute_dict_min_max = find_attributes_min_max(jsonFile)
