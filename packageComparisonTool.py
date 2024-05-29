@@ -145,17 +145,17 @@ for path in glob.glob(extract_package_path+'**/package/*.json', recursive=True):
     if 'examples' in name or name == "package":
         continue
     jsonFile, warnings = open_json_file(path, warnings)
-   resource= check_if_profile(jsonFile)
-    ifresource!= None:
+    resource = check_if_profile(jsonFile)
+    if resource != None:
         jsonFile = check_if_stu3(path,jsonFile)
-        ifresourcenot in table_min_max.keys():
+        if resource not in table_min_max.keys():
             table_min_max[resource] = []
         attribute_dict_min_max = find_attributes_min_max(jsonFile)
         dic_min_max = {}
         dic_min_max[name]=attribute_dict_min_max
         table_min_max[resource].append(dic_min_max)
         
-        ifresourcenot in table_valueSet.keys():
+        if resource not in table_valueSet.keys():
             table_valueSet[resource] = []
         attribute_dict_valueSet = find_attributes_valueSet(jsonFile)
         dic_valueSet = {}
@@ -164,7 +164,7 @@ for path in glob.glob(extract_package_path+'**/package/*.json', recursive=True):
 
         for custom_key, custom_value in custom_input_dict.items():
             print(custom_key,custom_value)
-            ifresourcenot in custom_value:
+            if resource not in custom_value:
                 custom_value[resource] = []
             attribute_dict_x = find_attributes_x(jsonFile, custom_key)
             dic_x = {}
