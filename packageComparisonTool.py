@@ -130,7 +130,7 @@ for tgz_package in tgz_packages:
 '''create dictionaries for each of the elements to check. Each dict will look like: {Resource:[{Profile:{id:value,...}},...],...}'''
 table_min_max = {}
 table_valueSet = {}
-custom_input_list = ('mustSupport,'+os.environ['INPUT_ELEMENT']).split(',')
+custom_input_list = list(filter(None,('mustSupport,'+os.environ['INPUT_ELEMENT']).split(',')))
 custom_input_dict = {}
 for l in custom_input_list:
     custom_input_dict[l] = {}
@@ -208,7 +208,7 @@ dataframes = {'Cardinality':min_max,'ValueSet_binding':valueSet}
 dataframes = dataframes | custom_dataframe
 
 ''' Create xlsx files '''
-for title, title_df in dataframes:
+for title, title_df in dataframes.items():
     with pd.ExcelWriter(title+'.xlsx') as writer:
         for k, v in title_df.items():
             try:
