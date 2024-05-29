@@ -2,7 +2,8 @@
 *This repository is maintained by [Interoperability Team]( https://nhsd-confluence.digital.nhs.uk/pages/viewpage.action?spaceKey=IOPS&title=Interoperability+Standards). Any queries contact us via [email](interoperabilityteam@nhs.net).*
 
 ## A tool to compare FHIR elements between different packages
-
+This tool checks against multiple packages and Profiles, and outputs an HTML and xlsx file for each element checked against. Each file includes a table for each individual resource. Default elements are min..max (cardinality), mustSupport, and bindings (Strength & ValueSet).
+    
 To use this Tool:
 
 - Create a new branch
