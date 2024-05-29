@@ -15,6 +15,9 @@ from functools import reduce
 from IPython.display import HTML
 import pathlib
 
+directory = './packages'
+extract_package_path = './extracted_packages/'
+
 def extract_tar_gz(tar_gz_file, extract_path):
     try:
         with tarfile.open(tar_gz_file, 'r:gz') as tar:
@@ -23,21 +26,10 @@ def extract_tar_gz(tar_gz_file, extract_path):
     except Exception as e:
         print(f"Extraction failed: {e}")
 
-directory = './packages'
-extract_package_path = './extracted_packages/'
-
 def find_tgz_packages(directory):
     tgz_files = glob.glob(directory+'/*.tgz')
     return tgz_files
-
-''' Find and extract each FHIR package '''
-tgz_packages = find_tgz_packages(directory)
-print("Packages Extracted")
-for tgz_package in tgz_packages:
-    extract_path = extract_package_path+os.path.splitext(os.path.basename(tgz_package))[0]
-    extract_tar_gz(tgz_package, extract_path)
-    print(tgz_package)
-    
+ 
 def open_json_file(path, warnings):
     ''' loads JSON File returns dict named contents '''
     try:
@@ -58,7 +50,6 @@ def check_if_profile(jsonFile):
         print(jsonFile['url'],e)
         return None
 
-
 def find_attributes_min_max(json_data, attribute_dict=None):
     if attribute_dict is None:
         attribute_dict = {}
@@ -76,7 +67,6 @@ def find_attributes_min_max(json_data, attribute_dict=None):
     elif isinstance(json_data, list):
         for item in json_data:
             find_attributes_min_max(item, attribute_dict)
-
     return attribute_dict
 
 def find_attributes_valueSet(json_data, attribute_dict=None):
@@ -94,7 +84,6 @@ def find_attributes_valueSet(json_data, attribute_dict=None):
     elif isinstance(json_data, list):
         for item in json_data:
             find_attributes_valueSet(item, attribute_dict)
-
     return attribute_dict
 
 def find_attributes_x(json_data, custom_key, attribute_dict=None):
@@ -109,7 +98,6 @@ def find_attributes_x(json_data, custom_key, attribute_dict=None):
     elif isinstance(json_data, list):
         for item in json_data:
             find_attributes_x(item, custom_key, attribute_dict)
-
     return attribute_dict
     
 def check_if_stu3(path,jsonFile):
@@ -130,6 +118,15 @@ def check_if_stu3(path,jsonFile):
             print(f"STU3-R4 Conversion Error: {response.status_code} - {response.reason}")
     return jsonFile
 
+
+''' Find and extract each FHIR package '''
+tgz_packages = find_tgz_packages(directory)
+print("Packages Extracted")
+for tgz_package in tgz_packages:
+    extract_path = extract_package_path+os.path.splitext(os.path.basename(tgz_package))[0]
+    extract_tar_gz(tgz_package, extract_path)
+    print(tgz_package)
+    
 '''create dictionaries for each of the elements to check. Each dict will look like: {Resource:[{Profile:{id:value,...}},...],...}'''
 table_min_max = {}
 table_valueSet = {}
