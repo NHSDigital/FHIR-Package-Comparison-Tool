@@ -207,6 +207,15 @@ if os.path.exists("index.html"):
 dataframes = {'Cardinality':min_max,'ValueSet_binding':valueSet}
 dataframes = dataframes | custom_dataframe
 
+''' Create xlsx files '''
+for title, title_df in dataframes:
+    with pd.ExcelWriter(title+'.xlsx') as writer:
+        for k, v in title_df.items():
+            try:
+                v.to_excel(writer,sheet_name=k)
+            except ValueError:
+                print(f"invalid Excel sheet name: {v}")
+                
 ''' Create html files '''
 for key,value in dataframes.items():
     if os.path.exists(f"_{key}.html"):
