@@ -43,14 +43,9 @@
   </thead>
   <tbody>
     <tr>
-      <th>AllergyIntolerance.category</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/allergy-intolerance-category|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/allergy-intolerance-category|4.0.1</td>
-    </tr>
-    <tr>
       <th>AllergyIntolerance.clinicalStatus</th>
       <td>required<br>http://hl7.org/fhir/ValueSet/allergyintolerance-clinical</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/allergyintolerance-clinical|4.0.1</td>
+      <td></td>
     </tr>
     <tr>
       <th>AllergyIntolerance.code</th>
@@ -58,18 +53,8 @@
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyCode</td>
     </tr>
     <tr>
-      <th>AllergyIntolerance.criticality</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality|4.0.1</td>
-    </tr>
-    <tr>
-      <th>AllergyIntolerance.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
       <th>AllergyIntolerance.reaction.exposureRoute</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/route-codes</td>
+      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute</td>
     </tr>
     <tr>
@@ -78,24 +63,14 @@
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyManifestation</td>
     </tr>
     <tr>
-      <th>AllergyIntolerance.reaction.severity</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/reaction-event-severity|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/reaction-event-severity|4.0.1</td>
-    </tr>
-    <tr>
       <th>AllergyIntolerance.reaction.substance</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/substance-code</td>
+      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-AllergySubstance</td>
-    </tr>
-    <tr>
-      <th>AllergyIntolerance.type</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/allergy-intolerance-type|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/allergy-intolerance-type|4.0.1</td>
     </tr>
     <tr>
       <th>AllergyIntolerance.verificationStatus</th>
       <td>required<br>http://hl7.org/fhir/ValueSet/allergyintolerance-verification</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/allergyintolerance-verification|4.0.1</td>
+      <td></td>
     </tr>
   </tbody>
 </table><h2>Appointment</h2>
@@ -108,48 +83,12 @@
   </thead>
   <tbody>
     <tr>
-      <th>Appointment.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>Appointment.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/appointmentstatus|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Appointment.cancelationReason</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/appointment-cancellation-reason</td>
-    </tr>
-    <tr>
-      <th>Appointment.serviceCategory</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/service-category</td>
-    </tr>
-    <tr>
-      <th>Appointment.serviceType</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/service-type</td>
-    </tr>
-    <tr>
       <th>Appointment.specialty</th>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode</td>
     </tr>
     <tr>
       <th>Appointment.appointmentType</th>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-AppointmentReasonCode</td>
-    </tr>
-    <tr>
-      <th>Appointment.reasonCode</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/encounter-reason</td>
-    </tr>
-    <tr>
-      <th>Appointment.participant.type</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/encounter-participant-type</td>
-    </tr>
-    <tr>
-      <th>Appointment.participant.required</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/participantrequired|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Appointment.participant.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/participationstatus|4.0.1</td>
     </tr>
   </tbody>
 </table><h2>CarePlan</h2>
@@ -162,10 +101,6 @@
   </thead>
   <tbody>
     <tr>
-      <th>CarePlan.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
       <th>CarePlan.text.status</th>
       <td>required<br>http://hl7.org/fhir/us/core/ValueSet/us-core-narrative-status</td>
     </tr>
@@ -176,38 +111,6 @@
     <tr>
       <th>CarePlan.intent</th>
       <td>required<br>http://hl7.org/fhir/ValueSet/care-plan-intent</td>
-    </tr>
-    <tr>
-      <th>CarePlan.category</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/care-plan-category</td>
-    </tr>
-    <tr>
-      <th>CarePlan.category:AssessPlan</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/care-plan-category</td>
-    </tr>
-    <tr>
-      <th>CarePlan.activity.outcomeCodeableConcept</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/care-plan-activity-outcome</td>
-    </tr>
-    <tr>
-      <th>CarePlan.activity.detail.kind</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/care-plan-activity-kind|4.0.1</td>
-    </tr>
-    <tr>
-      <th>CarePlan.activity.detail.code</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/procedure-code</td>
-    </tr>
-    <tr>
-      <th>CarePlan.activity.detail.reasonCode</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/clinical-findings</td>
-    </tr>
-    <tr>
-      <th>CarePlan.activity.detail.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/care-plan-activity-status|4.0.1</td>
-    </tr>
-    <tr>
-      <th>CarePlan.activity.detail.product[x]</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/medication-codes</td>
     </tr>
   </tbody>
 </table><h2>CareTeam</h2>
@@ -220,24 +123,12 @@
   </thead>
   <tbody>
     <tr>
-      <th>CareTeam.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
       <th>CareTeam.status</th>
       <td>required<br>http://hl7.org/fhir/ValueSet/care-team-status</td>
     </tr>
     <tr>
-      <th>CareTeam.category</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/care-team-category</td>
-    </tr>
-    <tr>
       <th>CareTeam.participant.role</th>
       <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.30</td>
-    </tr>
-    <tr>
-      <th>CareTeam.reasonCode</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/clinical-findings</td>
     </tr>
   </tbody>
 </table><h2>Composition</h2>
@@ -250,14 +141,6 @@
   </thead>
   <tbody>
     <tr>
-      <th>Composition.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>Composition.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/composition-status|4.0.1</td>
-    </tr>
-    <tr>
       <th>Composition.type</th>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-DocumentType</td>
     </tr>
@@ -266,36 +149,8 @@
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-CompositionCategory</td>
     </tr>
     <tr>
-      <th>Composition.confidentiality</th>
-      <td>required<br>http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification|2014-03-26</td>
-    </tr>
-    <tr>
-      <th>Composition.attester.mode</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/composition-attestation-mode|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Composition.relatesTo.code</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/document-relationship-type|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Composition.event.code</th>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v3-ActCode</td>
-    </tr>
-    <tr>
       <th>Composition.section.code</th>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-CompositionSectionCode</td>
-    </tr>
-    <tr>
-      <th>Composition.section.mode</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/list-mode|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Composition.section.orderedBy</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/list-order</td>
-    </tr>
-    <tr>
-      <th>Composition.section.emptyReason</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/list-empty-reason</td>
     </tr>
   </tbody>
 </table><h2>Condition</h2>
@@ -311,14 +166,14 @@
   <tbody>
     <tr>
       <th>Condition.bodySite</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
+      <td></td>
+      <td></td>
       <td>preferred</td>
     </tr>
     <tr>
       <th>Condition.category</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/condition-category</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/condition-category</td>
+      <td></td>
+      <td></td>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCategory</td>
     </tr>
     <tr>
@@ -329,7 +184,7 @@
     </tr>
     <tr>
       <th>Condition.category:us-core</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/condition-category</td>
+      <td></td>
       <td>required<br>http://hl7.org/fhir/us/core/ValueSet/us-core-problem-or-health-concern</td>
       <td></td>
     </tr>
@@ -337,7 +192,7 @@
       <th>Condition.clinicalStatus</th>
       <td>required<br>http://hl7.org/fhir/ValueSet/condition-clinical</td>
       <td>required<br>http://hl7.org/fhir/ValueSet/condition-clinical</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/condition-clinical|4.0.1</td>
+      <td></td>
     </tr>
     <tr>
       <th>Condition.code</th>
@@ -346,52 +201,10 @@
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode</td>
     </tr>
     <tr>
-      <th>Condition.evidence.code</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/manifestation-or-symptom</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/manifestation-or-symptom</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/manifestation-or-symptom</td>
-    </tr>
-    <tr>
-      <th>Condition.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>Condition.meta.security</th>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/security-labels</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Condition.meta.tag</th>
-      <td></td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/common-tags</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Condition.severity</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/condition-severity</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/condition-severity</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/condition-severity</td>
-    </tr>
-    <tr>
-      <th>Condition.stage.summary</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/condition-stage</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/condition-stage</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/condition-stage</td>
-    </tr>
-    <tr>
-      <th>Condition.stage.type</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/condition-stage-type</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/condition-stage-type</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/condition-stage-type</td>
-    </tr>
-    <tr>
       <th>Condition.verificationStatus</th>
       <td>required<br>http://hl7.org/fhir/ValueSet/condition-ver-status</td>
       <td>required<br>http://hl7.org/fhir/ValueSet/condition-ver-status</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/condition-ver-status|4.0.1</td>
+      <td></td>
     </tr>
   </tbody>
 </table><h2>Coverage</h2>
@@ -404,48 +217,12 @@
   </thead>
   <tbody>
     <tr>
-      <th>Coverage.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>Coverage.identifier:memberid.use</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/identifier-use|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Coverage.identifier:memberid.type</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/identifier-type</td>
-    </tr>
-    <tr>
-      <th>Coverage.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/fm-status|4.0.1</td>
-    </tr>
-    <tr>
       <th>Coverage.type</th>
       <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591</td>
     </tr>
     <tr>
       <th>Coverage.relationship</th>
       <td>extensible<br>http://hl7.org/fhir/ValueSet/subscriber-relationship</td>
-    </tr>
-    <tr>
-      <th>Coverage.class.type</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/coverage-class</td>
-    </tr>
-    <tr>
-      <th>Coverage.class:group.type</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/coverage-class</td>
-    </tr>
-    <tr>
-      <th>Coverage.class:plan.type</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/coverage-class</td>
-    </tr>
-    <tr>
-      <th>Coverage.costToBeneficiary.type</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/coverage-copay-type</td>
-    </tr>
-    <tr>
-      <th>Coverage.costToBeneficiary.exception.type</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/coverage-financial-exception</td>
     </tr>
   </tbody>
 </table><h2>Device</h2>
@@ -457,26 +234,6 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>Device.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>Device.udiCarrier.entryType</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/udi-entry-type|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Device.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/device-status|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Device.statusReason</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/device-status-reason</td>
-    </tr>
-    <tr>
-      <th>Device.deviceName.type</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/device-nametype|4.0.1</td>
-    </tr>
     <tr>
       <th>Device.type</th>
       <td>extensible<br>http://hl7.org/fhir/ValueSet/device-kind</td>
@@ -495,27 +252,6 @@
   </thead>
   <tbody>
     <tr>
-      <th>DiagnosticReport.category</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/diagnostic-service-sections</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/diagnostic-service-sections</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/diagnostic-service-sections</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/diagnostic-service-sections</td>
-    </tr>
-    <tr>
-      <th>DiagnosticReport.category:LaboratorySlice</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/diagnostic-service-sections</td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>DiagnosticReport.category:laboratory</th>
-      <td></td>
-      <td></td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/diagnostic-service-sections</td>
-      <td></td>
-    </tr>
-    <tr>
       <th>DiagnosticReport.category:us-core</th>
       <td></td>
       <td>required<br>http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-category</td>
@@ -531,52 +267,17 @@
     </tr>
     <tr>
       <th>DiagnosticReport.conclusionCode</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/clinical-findings</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/clinical-findings</td>
+      <td></td>
+      <td></td>
       <td>preferred</td>
       <td>preferred</td>
-    </tr>
-    <tr>
-      <th>DiagnosticReport.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>DiagnosticReport.meta.security</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/security-labels</td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>DiagnosticReport.meta.tag</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/common-tags</td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>DiagnosticReport.performer.type</th>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/resource-types</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/resource-types</td>
-    </tr>
-    <tr>
-      <th>DiagnosticReport.resultsInterpreter.type</th>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/resource-types</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/resource-types</td>
     </tr>
     <tr>
       <th>DiagnosticReport.status</th>
       <td>required<br>http://hl7.org/fhir/ValueSet/diagnostic-report-status</td>
       <td>required<br>http://hl7.org/fhir/ValueSet/diagnostic-report-status</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1</td>
+      <td></td>
+      <td></td>
     </tr>
   </tbody>
 </table><h2>DocumentReference</h2>
@@ -589,60 +290,20 @@
   </thead>
   <tbody>
     <tr>
-      <th>DocumentReference.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
       <th>DocumentReference.status</th>
       <td>required<br>http://hl7.org/fhir/ValueSet/document-reference-status</td>
-    </tr>
-    <tr>
-      <th>DocumentReference.docStatus</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/composition-status|4.0.1</td>
     </tr>
     <tr>
       <th>DocumentReference.type</th>
       <td>required<br>http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-type</td>
     </tr>
     <tr>
-      <th>DocumentReference.category</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/document-classcodes</td>
-    </tr>
-    <tr>
       <th>DocumentReference.category:uscore</th>
       <td>required<br>http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-category</td>
     </tr>
     <tr>
-      <th>DocumentReference.relatesTo.code</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/document-relationship-type|4.0.1</td>
-    </tr>
-    <tr>
-      <th>DocumentReference.securityLabel</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/security-labels</td>
-    </tr>
-    <tr>
-      <th>DocumentReference.content.attachment.contentType</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/mimetypes|4.0.1</td>
-    </tr>
-    <tr>
-      <th>DocumentReference.content.attachment.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
       <th>DocumentReference.content.format</th>
       <td>extensible<br>http://terminology.hl7.org/ValueSet/v3-HL7FormatCodes</td>
-    </tr>
-    <tr>
-      <th>DocumentReference.context.event</th>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v3-ActCode</td>
-    </tr>
-    <tr>
-      <th>DocumentReference.context.facilityType</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/c80-facilitycodes</td>
-    </tr>
-    <tr>
-      <th>DocumentReference.context.practiceSetting</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/c80-practice-codes</td>
     </tr>
   </tbody>
 </table><h2>Encounter</h2>
@@ -656,29 +317,9 @@
   </thead>
   <tbody>
     <tr>
-      <th>Encounter.class</th>
-      <td>extensible<br>http://terminology.hl7.org/ValueSet/v3-ActEncounterCode</td>
-      <td>extensible<br>http://terminology.hl7.org/ValueSet/v3-ActEncounterCode</td>
-    </tr>
-    <tr>
-      <th>Encounter.classHistory.class</th>
-      <td>extensible<br>http://terminology.hl7.org/ValueSet/v3-ActEncounterCode</td>
-      <td>extensible<br>http://terminology.hl7.org/ValueSet/v3-ActEncounterCode</td>
-    </tr>
-    <tr>
-      <th>Encounter.diagnosis.use</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/diagnosis-role</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/diagnosis-role</td>
-    </tr>
-    <tr>
       <th>Encounter.hospitalization.admitSource</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/encounter-admit-source</td>
+      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-SourceOfAdmission</td>
-    </tr>
-    <tr>
-      <th>Encounter.hospitalization.dietPreference</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/encounter-diet</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/encounter-diet</td>
     </tr>
     <tr>
       <th>Encounter.hospitalization.dischargeDisposition</th>
@@ -686,84 +327,14 @@
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-DischargeDestination</td>
     </tr>
     <tr>
-      <th>Encounter.hospitalization.reAdmission</th>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v2-0092</td>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v2-0092</td>
-    </tr>
-    <tr>
-      <th>Encounter.hospitalization.specialArrangement</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/encounter-special-arrangements</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/encounter-special-arrangements</td>
-    </tr>
-    <tr>
-      <th>Encounter.hospitalization.specialCourtesy</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/encounter-special-courtesy</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/encounter-special-courtesy</td>
-    </tr>
-    <tr>
-      <th>Encounter.identifier.type</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/identifier-type</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Encounter.identifier.use</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/identifier-use|4.0.1</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Encounter.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
       <th>Encounter.location.physicalType</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/location-physical-type</td>
+      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-EncounterLocationType</td>
     </tr>
     <tr>
-      <th>Encounter.location.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/encounter-location-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/encounter-location-status|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Encounter.meta.security</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/security-labels</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Encounter.meta.tag</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/common-tags</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Encounter.participant.type</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/encounter-participant-type</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/encounter-participant-type</td>
-    </tr>
-    <tr>
-      <th>Encounter.priority</th>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v3-ActPriority</td>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v3-ActPriority</td>
-    </tr>
-    <tr>
-      <th>Encounter.reasonCode</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/encounter-reason</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/encounter-reason</td>
-    </tr>
-    <tr>
       <th>Encounter.serviceType</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/service-type</td>
+      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-CareSettingType</td>
-    </tr>
-    <tr>
-      <th>Encounter.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/encounter-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/encounter-status|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Encounter.statusHistory.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/encounter-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/encounter-status|4.0.1</td>
     </tr>
     <tr>
       <th>Encounter.type</th>
@@ -781,28 +352,12 @@
   </thead>
   <tbody>
     <tr>
-      <th>FamilyMemberHistory.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>FamilyMemberHistory.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/history-status|4.0.1</td>
-    </tr>
-    <tr>
       <th>FamilyMemberHistory.dataAbsentReason</th>
       <td>extensible</td>
     </tr>
     <tr>
       <th>FamilyMemberHistory.relationship</th>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType</td>
-    </tr>
-    <tr>
-      <th>FamilyMemberHistory.sex</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/administrative-gender</td>
-    </tr>
-    <tr>
-      <th>FamilyMemberHistory.reasonCode</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/clinical-findings</td>
     </tr>
     <tr>
       <th>FamilyMemberHistory.condition.code</th>
@@ -823,44 +378,12 @@
   </thead>
   <tbody>
     <tr>
-      <th>Goal.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
       <th>Goal.lifecycleStatus</th>
       <td>required<br>http://hl7.org/fhir/ValueSet/goal-status</td>
     </tr>
     <tr>
-      <th>Goal.achievementStatus</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/goal-achievement</td>
-    </tr>
-    <tr>
-      <th>Goal.category</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/goal-category</td>
-    </tr>
-    <tr>
-      <th>Goal.priority</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/goal-priority</td>
-    </tr>
-    <tr>
       <th>Goal.description</th>
       <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-goal-description</td>
-    </tr>
-    <tr>
-      <th>Goal.start[x]</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/goal-start-event</td>
-    </tr>
-    <tr>
-      <th>Goal.target.measure</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-    </tr>
-    <tr>
-      <th>Goal.target.detail[x]</th>
-      <td>example</td>
-    </tr>
-    <tr>
-      <th>Goal.outcomeCode</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/clinical-findings</td>
     </tr>
   </tbody>
 </table><h2>HealthcareService</h2>
@@ -873,48 +396,12 @@
   </thead>
   <tbody>
     <tr>
-      <th>HealthcareService.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>HealthcareService.category</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/service-category</td>
-    </tr>
-    <tr>
-      <th>HealthcareService.type</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/service-type</td>
-    </tr>
-    <tr>
       <th>HealthcareService.specialty</th>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode</td>
     </tr>
     <tr>
-      <th>HealthcareService.serviceProvisionCode</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/service-provision-conditions</td>
-    </tr>
-    <tr>
-      <th>HealthcareService.eligibility.code</th>
-      <td>example</td>
-    </tr>
-    <tr>
-      <th>HealthcareService.program</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/program</td>
-    </tr>
-    <tr>
-      <th>HealthcareService.characteristic</th>
-      <td>example</td>
-    </tr>
-    <tr>
       <th>HealthcareService.communication</th>
       <td>required<br>http://hl7.org/fhir/ValueSet/all-languages</td>
-    </tr>
-    <tr>
-      <th>HealthcareService.referralMethod</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/service-referral-method</td>
-    </tr>
-    <tr>
-      <th>HealthcareService.availableTime.daysOfWeek</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/days-of-week|4.0.1</td>
     </tr>
   </tbody>
 </table><h2>Immunization</h2>
@@ -928,64 +415,29 @@
   </thead>
   <tbody>
     <tr>
-      <th>Immunization.fundingSource</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/immunization-funding-source</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/immunization-funding-source</td>
-    </tr>
-    <tr>
-      <th>Immunization.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>Immunization.performer.function</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/immunization-function</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/immunization-function</td>
-    </tr>
-    <tr>
-      <th>Immunization.programEligibility</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/immunization-program-eligibility</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/immunization-program-eligibility</td>
-    </tr>
-    <tr>
-      <th>Immunization.protocolApplied.targetDisease</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/immunization-target-disease</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/immunization-target-disease</td>
-    </tr>
-    <tr>
       <th>Immunization.reasonCode</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/immunization-reason</td>
+      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ImmunizationExplanationReason</td>
     </tr>
     <tr>
-      <th>Immunization.reportOrigin</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/immunization-origin</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/immunization-origin</td>
-    </tr>
-    <tr>
       <th>Immunization.route</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/immunization-route</td>
+      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute</td>
     </tr>
     <tr>
       <th>Immunization.site</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/immunization-site</td>
+      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ImmunizationAdministrationBodySite</td>
     </tr>
     <tr>
       <th>Immunization.status</th>
       <td>required<br>http://hl7.org/fhir/ValueSet/immunization-status</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/immunization-status|4.0.1</td>
+      <td></td>
     </tr>
     <tr>
       <th>Immunization.statusReason</th>
       <td>example<br>http://hl7.org/fhir/ValueSet/immunization-status-reason</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ReasonImmunizationNotAdministered</td>
-    </tr>
-    <tr>
-      <th>Immunization.subpotentReason</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/immunization-subpotent-reason</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/immunization-subpotent-reason</td>
     </tr>
     <tr>
       <th>Immunization.vaccineCode</th>
@@ -1003,28 +455,8 @@
   </thead>
   <tbody>
     <tr>
-      <th>List.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>List.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/list-status|4.0.1</td>
-    </tr>
-    <tr>
-      <th>List.mode</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/list-mode|4.0.1</td>
-    </tr>
-    <tr>
       <th>List.code</th>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ListCode</td>
-    </tr>
-    <tr>
-      <th>List.orderedBy</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/list-order</td>
-    </tr>
-    <tr>
-      <th>List.entry.flag</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/list-item-flag</td>
     </tr>
     <tr>
       <th>List.emptyReason</th>
@@ -1037,68 +469,15 @@
     <tr style="text-align: right;">
       <th></th>
       <th>StructureDefinition-us-core-location</th>
-      <th>UKCore-Location</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>Location.address.state</th>
       <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Location.address.type</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/address-type|4.0.1</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Location.address.use</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/address-use|4.0.1</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Location.hoursOfOperation.daysOfWeek</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/days-of-week|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/days-of-week|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Location.identifier:odsSiteCode.type</th>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/identifier-type</td>
-    </tr>
-    <tr>
-      <th>Location.identifier:odsSiteCode.use</th>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/identifier-use|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Location.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>Location.mode</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/location-mode|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/location-mode|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Location.operationalStatus</th>
-      <td>preferred<br>http://terminology.hl7.org/ValueSet/v2-0116</td>
-      <td>preferred<br>http://terminology.hl7.org/ValueSet/v2-0116</td>
-    </tr>
-    <tr>
-      <th>Location.physicalType</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/location-physical-type</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/location-physical-type</td>
-    </tr>
-    <tr>
-      <th>Location.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/location-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/location-status|4.0.1</td>
     </tr>
     <tr>
       <th>Location.type</th>
-      <td>extensible<br>http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType</td>
       <td>extensible<br>http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType</td>
     </tr>
   </tbody>
@@ -1119,18 +498,8 @@
     </tr>
     <tr>
       <th>Medication.form</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/medication-form-codes</td>
+      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationForm</td>
-    </tr>
-    <tr>
-      <th>Medication.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>Medication.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/medication-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/medication-status|4.0.1</td>
     </tr>
   </tbody>
 </table><h2>MedicationAdministration</h2>
@@ -1143,32 +512,12 @@
   </thead>
   <tbody>
     <tr>
-      <th>MedicationAdministration.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>MedicationAdministration.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/medication-admin-status|4.0.1</td>
-    </tr>
-    <tr>
-      <th>MedicationAdministration.statusReason</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/reason-medication-not-given-codes</td>
-    </tr>
-    <tr>
       <th>MedicationAdministration.category</th>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationAdministrationCategory</td>
     </tr>
     <tr>
       <th>MedicationAdministration.medication[x]</th>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode</td>
-    </tr>
-    <tr>
-      <th>MedicationAdministration.performer.function</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/med-admin-perform-function</td>
-    </tr>
-    <tr>
-      <th>MedicationAdministration.reasonCode</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/reason-medication-given-codes</td>
     </tr>
     <tr>
       <th>MedicationAdministration.dosage.site</th>
@@ -1194,18 +543,8 @@
   </thead>
   <tbody>
     <tr>
-      <th>MedicationDispense.category</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/medicationdispense-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/medicationdispense-category</td>
-    </tr>
-    <tr>
-      <th>MedicationDispense.dosageInstruction.additionalInstruction</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/additional-instruction-codes</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/additional-instruction-codes</td>
-    </tr>
-    <tr>
       <th>MedicationDispense.dosageInstruction.asNeeded[x]</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/medication-as-needed-reason</td>
+      <td></td>
       <td>preferred</td>
     </tr>
     <tr>
@@ -1214,29 +553,19 @@
       <td></td>
     </tr>
     <tr>
-      <th>MedicationDispense.dosageInstruction.doseAndRate.type</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/dose-rate-type</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/dose-rate-type</td>
-    </tr>
-    <tr>
       <th>MedicationDispense.dosageInstruction.method</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/administration-method-codes</td>
+      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageMethod</td>
     </tr>
     <tr>
       <th>MedicationDispense.dosageInstruction.route</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/route-codes</td>
+      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute</td>
     </tr>
     <tr>
       <th>MedicationDispense.dosageInstruction.site</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/approach-site-codes</td>
+      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite</td>
-    </tr>
-    <tr>
-      <th>MedicationDispense.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
     </tr>
     <tr>
       <th>MedicationDispense.medication[x]</th>
@@ -1244,34 +573,9 @@
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode</td>
     </tr>
     <tr>
-      <th>MedicationDispense.performer.function</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/medicationdispense-performer-function</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/medicationdispense-performer-function</td>
-    </tr>
-    <tr>
       <th>MedicationDispense.quantity</th>
       <td>preferred<br>http://hl7.org/fhir/ValueSet/ucum-common</td>
       <td></td>
-    </tr>
-    <tr>
-      <th>MedicationDispense.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/medicationdispense-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/medicationdispense-status|4.0.1</td>
-    </tr>
-    <tr>
-      <th>MedicationDispense.statusReason[x]</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/medicationdispense-status-reason</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/medicationdispense-status-reason</td>
-    </tr>
-    <tr>
-      <th>MedicationDispense.substitution.reason</th>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason</td>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason</td>
-    </tr>
-    <tr>
-      <th>MedicationDispense.substitution.type</th>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode</td>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode</td>
     </tr>
     <tr>
       <th>MedicationDispense.type</th>
@@ -1291,7 +595,7 @@
   <tbody>
     <tr>
       <th>MedicationRequest.category</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/medicationrequest-category</td>
+      <td></td>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCategory</td>
     </tr>
     <tr>
@@ -1301,17 +605,12 @@
     </tr>
     <tr>
       <th>MedicationRequest.courseOfTherapyType</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy</td>
+      <td></td>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCourseOfTherapy</td>
     </tr>
     <tr>
-      <th>MedicationRequest.dosageInstruction.additionalInstruction</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/additional-instruction-codes</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/additional-instruction-codes</td>
-    </tr>
-    <tr>
       <th>MedicationRequest.dosageInstruction.asNeeded[x]</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/medication-as-needed-reason</td>
+      <td></td>
       <td>preferred</td>
     </tr>
     <tr>
@@ -1320,34 +619,24 @@
       <td></td>
     </tr>
     <tr>
-      <th>MedicationRequest.dosageInstruction.doseAndRate.type</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/dose-rate-type</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/dose-rate-type</td>
-    </tr>
-    <tr>
       <th>MedicationRequest.dosageInstruction.method</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/administration-method-codes</td>
+      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageMethod</td>
     </tr>
     <tr>
       <th>MedicationRequest.dosageInstruction.route</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/route-codes</td>
+      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute</td>
     </tr>
     <tr>
       <th>MedicationRequest.dosageInstruction.site</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/approach-site-codes</td>
+      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite</td>
     </tr>
     <tr>
       <th>MedicationRequest.intent</th>
       <td>required<br>http://hl7.org/fhir/ValueSet/medicationrequest-intent</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/medicationrequest-intent|4.0.1</td>
-    </tr>
-    <tr>
-      <th>MedicationRequest.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
+      <td></td>
     </tr>
     <tr>
       <th>MedicationRequest.medication[x]</th>
@@ -1355,39 +644,14 @@
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode</td>
     </tr>
     <tr>
-      <th>MedicationRequest.performerType</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/performer-role</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/performer-role</td>
-    </tr>
-    <tr>
-      <th>MedicationRequest.priority</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/request-priority|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/request-priority|4.0.1</td>
-    </tr>
-    <tr>
       <th>MedicationRequest.reasonCode</th>
       <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/condition-code</td>
+      <td></td>
     </tr>
     <tr>
       <th>MedicationRequest.status</th>
       <td>required<br>http://hl7.org/fhir/ValueSet/medicationrequest-status</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/medicationrequest-status|4.0.1</td>
-    </tr>
-    <tr>
-      <th>MedicationRequest.statusReason</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/medicationrequest-status-reason</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/medicationrequest-status-reason</td>
-    </tr>
-    <tr>
-      <th>MedicationRequest.substitution.allowed[x]</th>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode</td>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode</td>
-    </tr>
-    <tr>
-      <th>MedicationRequest.substitution.reason</th>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason</td>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason</td>
+      <td></td>
     </tr>
   </tbody>
 </table><h2>MedicationStatement</h2>
@@ -1400,40 +664,12 @@
   </thead>
   <tbody>
     <tr>
-      <th>MedicationStatement.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>MedicationStatement.identifier.use</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/identifier-use|4.0.1</td>
-    </tr>
-    <tr>
-      <th>MedicationStatement.identifier.type</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/identifier-type</td>
-    </tr>
-    <tr>
-      <th>MedicationStatement.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/medication-statement-status|4.0.1</td>
-    </tr>
-    <tr>
-      <th>MedicationStatement.statusReason</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/reason-medication-status-codes</td>
-    </tr>
-    <tr>
       <th>MedicationStatement.category</th>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationStatementCategory</td>
     </tr>
     <tr>
       <th>MedicationStatement.medication[x]</th>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode</td>
-    </tr>
-    <tr>
-      <th>MedicationStatement.reasonCode</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/condition-code</td>
-    </tr>
-    <tr>
-      <th>MedicationStatement.dosage.additionalInstruction</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/additional-instruction-codes</td>
     </tr>
     <tr>
       <th>MedicationStatement.dosage.asNeeded[x]</th>
@@ -1451,40 +687,25 @@
       <th>MedicationStatement.dosage.method</th>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageMethod</td>
     </tr>
-    <tr>
-      <th>MedicationStatement.dosage.doseAndRate.type</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/dose-rate-type</td>
-    </tr>
   </tbody>
 </table><h2>Observation</h2>
 <table border="1" class="dataframe table-bordered table-striped table-hover">
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>StructureDefinition-us-core-blood-pressure</th>
       <th>StructureDefinition-us-core-observation-pregnancystatus</th>
       <th>StructureDefinition-us-core-head-circumference</th>
-      <th>StructureDefinition-us-core-treatment-intervention-preference</th>
       <th>StructureDefinition-us-core-smokingstatus</th>
-      <th>StructureDefinition-us-core-respiratory-rate</th>
-      <th>StructureDefinition-us-core-pulse-oximetry</th>
-      <th>StructureDefinition-head-occipital-frontal-circumference-percentile</th>
       <th>StructureDefinition-us-core-observation-lab</th>
-      <th>StructureDefinition-pediatric-bmi-for-age</th>
       <th>StructureDefinition-us-core-observation-clinical-result</th>
       <th>StructureDefinition-us-core-observation-screening-assessment</th>
       <th>StructureDefinition-us-core-vital-signs</th>
-      <th>StructureDefinition-us-core-average-blood-pressure</th>
-      <th>StructureDefinition-us-core-bmi</th>
-      <th>StructureDefinition-pediatric-weight-for-height</th>
       <th>StructureDefinition-us-core-observation-pregnancyintent</th>
       <th>StructureDefinition-us-core-observation-occupation</th>
       <th>StructureDefinition-us-core-body-weight</th>
-      <th>StructureDefinition-us-core-heart-rate</th>
       <th>StructureDefinition-us-core-body-height</th>
       <th>StructureDefinition-us-core-body-temperature</th>
       <th>StructureDefinition-us-core-simple-observation</th>
-      <th>StructureDefinition-us-core-care-experience-preference</th>
       <th>StructureDefinition-us-core-observation-sexual-orientation</th>
       <th>UKCore-Observation-Group-Lab</th>
       <th>UKCore-Observation</th>
@@ -1494,167 +715,26 @@
   <tbody>
     <tr>
       <th>Observation.bodySite</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td>preferred</td>
       <td>preferred</td>
       <td>preferred</td>
-    </tr>
-    <tr>
-      <th>Observation.category</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-    </tr>
-    <tr>
-      <th>Observation.category:SocialHistory</th>
-      <td></td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td></td>
-      <td></td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.category:VSCat</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td></td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td></td>
-      <td></td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td></td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td></td>
-      <td></td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td></td>
-      <td></td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.category:laboratory</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td></td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
     </tr>
     <tr>
       <th>Observation.category:screening-assessment</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -1672,91 +752,14 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.category:socialhistory</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.category:survey</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Observation.category:us-core</th>
       <td></td>
       <td></td>
       <td></td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td></td>
       <td>required<br>http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-result-observation-category</td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-result-observation-category</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -1765,7 +768,6 @@
       <td></td>
       <td></td>
       <td>required<br>http://hl7.org/fhir/us/core/ValueSet/us-core-simple-observation-category</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/observation-category</td>
       <td></td>
       <td></td>
       <td></td>
@@ -1773,254 +775,46 @@
     </tr>
     <tr>
       <th>Observation.code</th>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
+      <td></td>
+      <td></td>
       <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1267.6</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
       <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-laboratory-test-codes</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
       <td>extensible</td>
       <td>preferred<br>http://hl7.org/fhir/us/core/ValueSet/us-core-survey-codes</td>
       <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td>preferred</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
+      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-PathologyAndLaboratoryMedicineProcedures</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationType</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-PathologyAndLaboratoryMedicineObservables</td>
     </tr>
     <tr>
       <th>Observation.component.code</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationType</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-    </tr>
-    <tr>
-      <th>Observation.component.dataAbsentReason</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-    </tr>
-    <tr>
-      <th>Observation.component.interpretation</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
+      <td></td>
     </tr>
     <tr>
       <th>Observation.component.value[x]</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:Concentration.code</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:Concentration.dataAbsentReason</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:Concentration.interpretation</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:Concentration.value[x]</th>
       <td></td>
       <td></td>
       <td></td>
@@ -2028,451 +822,6 @@
       <td></td>
       <td></td>
       <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:Concentration.value[x].comparator</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:FlowRate.code</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:FlowRate.dataAbsentReason</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:FlowRate.interpretation</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:FlowRate.value[x]</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:FlowRate.value[x].comparator</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:diastolic.code</th>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:diastolic.dataAbsentReason</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:diastolic.interpretation</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:diastolic.value[x]</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:diastolic.value[x].comparator</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:industry.code</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:industry.dataAbsentReason</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:industry.interpretation</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
       <td></td>
       <td></td>
       <td></td>
@@ -2494,15 +843,6 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td>extensible<br>http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7900</td>
       <td></td>
       <td></td>
@@ -2512,336 +852,13 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:industry.value[x]</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7900</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:systolic.code</th>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-codes</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:systolic.dataAbsentReason</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:systolic.interpretation</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:systolic.value[x]</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:systolic.value[x].comparator</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.dataAbsentReason</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
     </tr>
     <tr>
       <th>Observation.interpretation</th>
+      <td></td>
+      <td></td>
+      <td></td>
       <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-    </tr>
-    <tr>
-      <th>Observation.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>Observation.meta.security</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/security-labels</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.meta.tag</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/common-tags</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -2858,140 +875,47 @@
     </tr>
     <tr>
       <th>Observation.method</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/observation-methods</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td>preferred</td>
       <td>preferred</td>
       <td>preferred</td>
-    </tr>
-    <tr>
-      <th>Observation.referenceRange.appliesTo</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/referencerange-appliesto</td>
-    </tr>
-    <tr>
-      <th>Observation.referenceRange.type</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/referencerange-meaning</td>
     </tr>
     <tr>
       <th>Observation.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
+      <td></td>
+      <td></td>
       <td>required<br>http://hl7.org/fhir/us/core/ValueSet/us-core-observation-smoking-status-status</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td>required<br>http://hl7.org/fhir/ValueSet/observation-status</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <th>Observation.valueCodeableConcept</th>
-      <td></td>
       <td>preferred<br>http://hl7.org/fhir/us/core/ValueSet/us-core-pregnancy-status</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -3004,8 +928,6 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
       <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1240.11</td>
       <td></td>
       <td></td>
@@ -3014,16 +936,7 @@
     <tr>
       <th>Observation.valueQuantity.code</th>
       <td></td>
-      <td></td>
       <td>required<br>http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -3032,10 +945,8 @@
       <td></td>
       <td></td>
       <td>required<br>http://hl7.org/fhir/ValueSet/ucum-bodyweight|4.0.1</td>
-      <td></td>
       <td>required<br>http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1</td>
       <td>required<br>http://hl7.org/fhir/ValueSet/ucum-bodytemp|4.0.1</td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -3044,28 +955,17 @@
     </tr>
     <tr>
       <th>Observation.value[x]</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
       <td></td>
       <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
       <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
       <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
       <td></td>
       <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -3075,8 +975,6 @@
     </tr>
     <tr>
       <th>Observation.value[x]:valueCodeableConcept</th>
-      <td></td>
-      <td>preferred<br>http://hl7.org/fhir/us/core/ValueSet/us-core-pregnancy-status</td>
       <td></td>
       <td></td>
       <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1267.3</td>
@@ -3091,15 +989,6 @@
       <td></td>
       <td></td>
       <td></td>
-      <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-pregnancy-intent</td>
-      <td>extensible<br>http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7901</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1240.11</td>
       <td></td>
       <td></td>
       <td></td>
@@ -3108,38 +997,7 @@
       <th>Observation.value[x]:valueQuantity</th>
       <td></td>
       <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td></td>
       <td>required<br>http://terminology.hl7.org/ValueSet/v3-UnitsOfMeasureCaseSensitive</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.value[x]:valueQuantity.code</th>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1</td>
       <td></td>
       <td></td>
       <td></td>
@@ -3148,48 +1006,6 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/ucum-bodyweight|4.0.1</td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/ucum-bodytemp|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.value[x]:valueQuantity.comparator</th>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1</td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1</td>
       <td></td>
       <td></td>
       <td></td>
@@ -3214,68 +1030,8 @@
       <td></td>
     </tr>
     <tr>
-      <th>Organization.address.type</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/address-type|4.0.1</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Organization.address.use</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/address-use|4.0.1</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Organization.contact.purpose</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/contactentity-type</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/contactentity-type</td>
-    </tr>
-    <tr>
-      <th>Organization.identifier.type</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/identifier-type</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Organization.identifier.use</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/identifier-use|4.0.1</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Organization.identifier:odsOrganisationCode.type</th>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/identifier-type</td>
-    </tr>
-    <tr>
-      <th>Organization.identifier:odsOrganisationCode.use</th>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/identifier-use|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Organization.identifier:odsSiteCode.type</th>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/identifier-type</td>
-    </tr>
-    <tr>
-      <th>Organization.identifier:odsSiteCode.use</th>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/identifier-use|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Organization.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>Organization.telecom.system</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Organization.telecom.use</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1</td>
-      <td></td>
-    </tr>
-    <tr>
       <th>Organization.type</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/organization-type</td>
+      <td></td>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType</td>
     </tr>
   </tbody>
@@ -3295,94 +1051,34 @@
       <td></td>
     </tr>
     <tr>
-      <th>Patient.address.type</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/address-type|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/address-type|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Patient.address.use</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/address-use|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/address-use|4.0.1</td>
-    </tr>
-    <tr>
       <th>Patient.communication.language</th>
       <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/simple-language</td>
       <td>required<br>http://hl7.org/fhir/ValueSet/all-languages</td>
     </tr>
     <tr>
-      <th>Patient.contact.gender</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1</td>
-    </tr>
-    <tr>
       <th>Patient.contact.relationship</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/patient-contactrelationship</td>
+      <td></td>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType</td>
-    </tr>
-    <tr>
-      <th>Patient.contact.telecom.system</th>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Patient.contact.telecom.use</th>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1</td>
     </tr>
     <tr>
       <th>Patient.gender</th>
       <td>required<br>http://hl7.org/fhir/ValueSet/administrative-gender</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Patient.identifier.type</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/identifier-type</td>
       <td></td>
-    </tr>
-    <tr>
-      <th>Patient.identifier.use</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/identifier-use|4.0.1</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Patient.identifier:nhsNumber.type</th>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/identifier-type</td>
-    </tr>
-    <tr>
-      <th>Patient.identifier:nhsNumber.use</th>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/identifier-use|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Patient.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>Patient.link.type</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/link-type|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/link-type|4.0.1</td>
     </tr>
     <tr>
       <th>Patient.maritalStatus</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/marital-status</td>
+      <td></td>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode</td>
-    </tr>
-    <tr>
-      <th>Patient.name.use</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/name-use|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/name-use|4.0.1</td>
     </tr>
     <tr>
       <th>Patient.telecom.system</th>
       <td>required<br>http://hl7.org/fhir/ValueSet/contact-point-system</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1</td>
+      <td></td>
     </tr>
     <tr>
       <th>Patient.telecom.use</th>
       <td>required<br>http://hl7.org/fhir/ValueSet/contact-point-use</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1</td>
+      <td></td>
     </tr>
   </tbody>
 </table><h2>Practitioner</h2>
@@ -3401,59 +1097,9 @@
       <td></td>
     </tr>
     <tr>
-      <th>Practitioner.address.type</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/address-type|4.0.1</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Practitioner.address.use</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/address-use|4.0.1</td>
-      <td></td>
-    </tr>
-    <tr>
       <th>Practitioner.communication</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
+      <td></td>
       <td>required<br>http://hl7.org/fhir/ValueSet/all-languages</td>
-    </tr>
-    <tr>
-      <th>Practitioner.gender</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Practitioner.identifier.type</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/identifier-type</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/identifier-type</td>
-    </tr>
-    <tr>
-      <th>Practitioner.identifier.use</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/identifier-use|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/identifier-use|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Practitioner.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>Practitioner.name.use</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/name-use|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/name-use|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Practitioner.qualification.code</th>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v2-2.7-0360</td>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v2-2.7-0360</td>
-    </tr>
-    <tr>
-      <th>Practitioner.telecom.system</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Practitioner.telecom.use</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1</td>
     </tr>
   </tbody>
 </table><h2>PractitionerRole</h2>
@@ -3467,34 +1113,14 @@
   </thead>
   <tbody>
     <tr>
-      <th>PractitionerRole.availableTime.daysOfWeek</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/days-of-week|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/days-of-week|4.0.1</td>
-    </tr>
-    <tr>
       <th>PractitionerRole.code</th>
       <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.30</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/practitioner-role</td>
-    </tr>
-    <tr>
-      <th>PractitionerRole.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
+      <td></td>
     </tr>
     <tr>
       <th>PractitionerRole.specialty</th>
       <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066</td>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode</td>
-    </tr>
-    <tr>
-      <th>PractitionerRole.telecom.system</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1</td>
-    </tr>
-    <tr>
-      <th>PractitionerRole.telecom.use</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1</td>
     </tr>
   </tbody>
 </table><h2>Procedure</h2>
@@ -3509,13 +1135,8 @@
   <tbody>
     <tr>
       <th>Procedure.bodySite</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
+      <td></td>
       <td>preferred</td>
-    </tr>
-    <tr>
-      <th>Procedure.category</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/procedure-category</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/procedure-category</td>
     </tr>
     <tr>
       <th>Procedure.code</th>
@@ -3524,53 +1145,18 @@
     </tr>
     <tr>
       <th>Procedure.complication</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/condition-code</td>
+      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode</td>
-    </tr>
-    <tr>
-      <th>Procedure.focalDevice.action</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/device-action</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/device-action</td>
-    </tr>
-    <tr>
-      <th>Procedure.followUp</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/procedure-followup</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/procedure-followup</td>
-    </tr>
-    <tr>
-      <th>Procedure.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>Procedure.outcome</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/procedure-outcome</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/procedure-outcome</td>
-    </tr>
-    <tr>
-      <th>Procedure.performer.function</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/performer-role</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/performer-role</td>
     </tr>
     <tr>
       <th>Procedure.reasonCode</th>
       <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/procedure-reason</td>
+      <td></td>
     </tr>
     <tr>
       <th>Procedure.status</th>
       <td>required<br>http://hl7.org/fhir/ValueSet/event-status</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/event-status|4.0.1</td>
-    </tr>
-    <tr>
-      <th>Procedure.statusReason</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/procedure-not-performed-reason</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/procedure-not-performed-reason</td>
-    </tr>
-    <tr>
-      <th>Procedure.usedCode</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/device-kind</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/device-kind</td>
+      <td></td>
     </tr>
   </tbody>
 </table><h2>Provenance</h2>
@@ -3583,48 +1169,8 @@
   </thead>
   <tbody>
     <tr>
-      <th>Provenance.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>Provenance.target.type</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/resource-types</td>
-    </tr>
-    <tr>
-      <th>Provenance.reason</th>
-      <td>extensible<br>http://terminology.hl7.org/ValueSet/v3-PurposeOfUse</td>
-    </tr>
-    <tr>
-      <th>Provenance.activity</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/provenance-activity-type</td>
-    </tr>
-    <tr>
       <th>Provenance.agent.type</th>
       <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type</td>
-    </tr>
-    <tr>
-      <th>Provenance.agent.role</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/security-role-type</td>
-    </tr>
-    <tr>
-      <th>Provenance.agent:ProvenanceAuthor.type</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/provenance-agent-type</td>
-    </tr>
-    <tr>
-      <th>Provenance.agent:ProvenanceAuthor.role</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/security-role-type</td>
-    </tr>
-    <tr>
-      <th>Provenance.agent:ProvenanceTransmitter.type</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/provenance-agent-type</td>
-    </tr>
-    <tr>
-      <th>Provenance.agent:ProvenanceTransmitter.role</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/security-role-type</td>
-    </tr>
-    <tr>
-      <th>Provenance.entity.role</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/provenance-entity-role|4.0.1</td>
     </tr>
   </tbody>
 </table><h2>QuestionnaireResponse</h2>
@@ -3632,22 +1178,9 @@
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>StructureDefinition-us-core-questionnaireresponse</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>QuestionnaireResponse.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>QuestionnaireResponse.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/questionnaire-answers-status|4.0.1</td>
-    </tr>
-    <tr>
-      <th>QuestionnaireResponse.item.answer.value[x]</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/questionnaire-answers</td>
-    </tr>
   </tbody>
 </table><h2>RelatedPerson</h2>
 <table border="1" class="dataframe table-bordered table-striped table-hover">
@@ -3660,44 +1193,14 @@
   </thead>
   <tbody>
     <tr>
-      <th>RelatedPerson.address.type</th>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/address-type|4.0.1</td>
-    </tr>
-    <tr>
-      <th>RelatedPerson.address.use</th>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/address-use|4.0.1</td>
-    </tr>
-    <tr>
       <th>RelatedPerson.communication.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
+      <td></td>
       <td>required<br>http://hl7.org/fhir/ValueSet/all-languages</td>
-    </tr>
-    <tr>
-      <th>RelatedPerson.gender</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1</td>
-    </tr>
-    <tr>
-      <th>RelatedPerson.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
     </tr>
     <tr>
       <th>RelatedPerson.relationship</th>
       <td>preferred<br>http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype</td>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType</td>
-    </tr>
-    <tr>
-      <th>RelatedPerson.telecom.system</th>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1</td>
-    </tr>
-    <tr>
-      <th>RelatedPerson.telecom.use</th>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1</td>
     </tr>
   </tbody>
 </table><h2>Schedule</h2>
@@ -3709,18 +1212,6 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>Schedule.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>Schedule.serviceCategory</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/service-category</td>
-    </tr>
-    <tr>
-      <th>Schedule.serviceType</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/service-type</td>
-    </tr>
     <tr>
       <th>Schedule.specialty</th>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode</td>
@@ -3738,22 +1229,10 @@
   </thead>
   <tbody>
     <tr>
-      <th>ServiceRequest.asNeeded[x]</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/medication-as-needed-reason</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/medication-as-needed-reason</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/medication-as-needed-reason</td>
-    </tr>
-    <tr>
       <th>ServiceRequest.bodySite</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/body-site</td>
+      <td></td>
       <td>preferred</td>
       <td>preferred</td>
-    </tr>
-    <tr>
-      <th>ServiceRequest.category</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/servicerequest-category</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/servicerequest-category</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/servicerequest-category</td>
     </tr>
     <tr>
       <th>ServiceRequest.category:genomicsWholeCaseSequencing</th>
@@ -3774,52 +1253,16 @@
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-PathologyAndLaboratoryMedicineProcedures</td>
     </tr>
     <tr>
-      <th>ServiceRequest.intent</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/request-intent|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/request-intent|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/request-intent|4.0.1</td>
-    </tr>
-    <tr>
-      <th>ServiceRequest.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>ServiceRequest.locationCode</th>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType</td>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType</td>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType</td>
-    </tr>
-    <tr>
       <th>ServiceRequest.orderDetail</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/servicerequest-orderdetail</td>
+      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode</td>
-    </tr>
-    <tr>
-      <th>ServiceRequest.performerType</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/participant-role</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/participant-role</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/participant-role</td>
-    </tr>
-    <tr>
-      <th>ServiceRequest.priority</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/request-priority|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/request-priority|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/request-priority|4.0.1</td>
     </tr>
     <tr>
       <th>ServiceRequest.reasonCode</th>
       <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ServiceRequestReasonCode</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ServiceRequestReasonCode</td>
-    </tr>
-    <tr>
-      <th>ServiceRequest.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/request-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/request-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/request-status|4.0.1</td>
     </tr>
   </tbody>
 </table><h2>Slot</h2>
@@ -3832,28 +1275,8 @@
   </thead>
   <tbody>
     <tr>
-      <th>Slot.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>Slot.serviceCategory</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/service-category</td>
-    </tr>
-    <tr>
-      <th>Slot.serviceType</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/service-type</td>
-    </tr>
-    <tr>
       <th>Slot.specialty</th>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode</td>
-    </tr>
-    <tr>
-      <th>Slot.appointmentType</th>
-      <td>preferred<br>http://terminology.hl7.org/ValueSet/v2-0276</td>
-    </tr>
-    <tr>
-      <th>Slot.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/slotstatus|4.0.1</td>
     </tr>
   </tbody>
 </table><h2>Specimen</h2>
@@ -3872,49 +1295,14 @@
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-SpecimenBodySite</td>
     </tr>
     <tr>
-      <th>Specimen.collection.collector.type</th>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/resource-types</td>
-    </tr>
-    <tr>
-      <th>Specimen.collection.fastingStatus[x]</th>
-      <td>extensible<br>http://terminology.hl7.org/ValueSet/v2-0916</td>
-      <td>extensible<br>http://terminology.hl7.org/ValueSet/v2-0916</td>
-    </tr>
-    <tr>
-      <th>Specimen.collection.method</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/specimen-collection-method</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/specimen-collection-method</td>
-    </tr>
-    <tr>
       <th>Specimen.condition</th>
       <td>extensible<br>http://terminology.hl7.org/ValueSet/v2-0493</td>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-BiopsyState</td>
     </tr>
     <tr>
-      <th>Specimen.container.additive[x]</th>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v2-0371</td>
-      <td>example<br>http://terminology.hl7.org/ValueSet/v2-0371</td>
-    </tr>
-    <tr>
       <th>Specimen.container.type</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/specimen-container-type</td>
+      <td></td>
       <td>preferred</td>
-    </tr>
-    <tr>
-      <th>Specimen.language</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/languages</td>
-    </tr>
-    <tr>
-      <th>Specimen.processing.procedure</th>
-      <td>example<br>http://hl7.org/fhir/ValueSet/specimen-processing-procedure</td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/specimen-processing-procedure</td>
-    </tr>
-    <tr>
-      <th>Specimen.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/specimen-status|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/specimen-status|4.0.1</td>
     </tr>
     <tr>
       <th>Specimen.type</th>
