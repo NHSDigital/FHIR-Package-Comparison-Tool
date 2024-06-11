@@ -7,7 +7,10 @@ on:
     inputs:
       fhir-element:
         description: 'FHIR elements to compare, separated by a comma, e.g. min,max. Cardinality, ValueSet binding & mustSupport are created as default'
-
+        type: string
+      differential:
+        description: 'Checks only the elements within the StuctureDefinition.differential'
+        type: boolean
 
 
 
