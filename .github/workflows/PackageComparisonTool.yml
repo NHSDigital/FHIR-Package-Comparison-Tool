@@ -5,10 +5,13 @@ on:
   workflow_dispatch:
     inputs:
       fhir-element:
-        description: 'FHIR elements to compare, separated by a comma, e.g. min,max. Cardinality, ValueSet binding & mustSupport are created as default'
+        description: 'FHIR elements to compare, separated by a comma, e.g. min,max'
         type: string
       differential:
         description: 'Check only the elements within the StructureDefinition.differential'
+        type: boolean
+      ignore-extensions:
+        description: 'Check to ignore any extension elements'
         type: boolean
 
 jobs:
@@ -37,6 +40,7 @@ jobs:
         env:
           INPUT_ELEMENT: ${{ github.event.inputs.fhir-element }}
           DIFF_ELEMENT: ${{ github.event.inputs.differential }}
+          IGNORE_EXTENSION: ${{ github.event.inputs.ignore-extensions }}
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
