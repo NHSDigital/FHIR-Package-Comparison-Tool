@@ -59,11 +59,11 @@ def find_attributes_min_max(json_data, attribute_dict=None):
             if 'min' in json_data:
                 attribute_dict[json_data['id']] = str(json_data['min'])+'..'
             else:
-                attribute_dict[json_data['id']] = ' ..'
+                attribute_dict[json_data['id']] = '_..'
             if 'max' in json_data:
                 attribute_dict[json_data['id']] = attribute_dict[json_data['id']]+str(json_data['max'])
             else:
-                attribute_dict[json_data['id']]+" "
+                attribute_dict[json_data['id']]+"_"
         for key, value in json_data.items():\
             find_attributes_min_max(value, attribute_dict)
     elif isinstance(json_data, list):
