@@ -15,6 +15,7 @@ from functools import reduce
 from IPython.display import HTML
 import pathlib
 
+print(os.environ['INPUT_ELEMENT'])
 directory = './packages'
 extract_package_path = './extracted_packages/'
 
