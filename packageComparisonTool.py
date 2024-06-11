@@ -55,7 +55,7 @@ def find_attributes_min_max(json_data, attribute_dict=None):
         attribute_dict = {}
 
     if isinstance(json_data, dict):
-        if 'id' in json_data and ('min' in json_data or 'max' in json_data):
+        if 'id' in json_data and ('min' in json_data or 'max' in json_data) and (not os.environ['INPUT_ELEMENT'] or 'extension' not in json_data['id'].lower):
             if 'min' in json_data:
                 attribute_dict[json_data['id']] = str(json_data['min'])+'..'
             else:
@@ -74,7 +74,7 @@ def find_attributes_valueSet(json_data, attribute_dict=None):
         attribute_dict = {}
 
     if isinstance(json_data, dict):
-        if 'id' in json_data and ('binding' in json_data):
+        if 'id' in json_data and ('binding' in json_data) and (not os.environ['INPUT_ELEMENT'] or 'extension' not in json_data['id'].lower):
             try:
                 attribute_dict[json_data['id']] = f"{json_data['binding']['strength']}\n{json_data['binding']['valueSet']}"
             except:
@@ -91,7 +91,7 @@ def find_attributes_x(json_data, custom_key, attribute_dict=None):
         attribute_dict = {}
 
     if isinstance(json_data, dict):
-        if 'id' in json_data and custom_key in json_data:
+        if 'id' in json_data and custom_key in json_data and (not os.environ['INPUT_ELEMENT'] or 'extension' not in json_data['id'].lower):
             attribute_dict[json_data['id']] = str(json_data[custom_key])
         for key, value in json_data.items():\
             find_attributes_x(value, custom_key, attribute_dict)
