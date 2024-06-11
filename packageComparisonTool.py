@@ -145,6 +145,11 @@ for path in glob.glob(extract_package_path+'**/package/*.json', recursive=True):
     resource = check_if_profile(jsonFile)
     if resource != None:
         jsonFile = check_if_stu3(path,jsonFile)
+        if INPUT_ELEMENT is True:
+            try:
+                jsonFile = jsonFile['differential']
+            except:
+                print(f"No differential found in {name} - using snapshot")
         if resource not in table_min_max.keys():
             table_min_max[resource] = []
         attribute_dict_min_max = find_attributes_min_max(jsonFile)
