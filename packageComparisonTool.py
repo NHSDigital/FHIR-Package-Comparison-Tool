@@ -145,7 +145,7 @@ for path in glob.glob(extract_package_path+'**/package/*.json', recursive=True):
     resource = check_if_profile(jsonFile)
     if resource != None:
         jsonFile = check_if_stu3(path,jsonFile)
-        if INPUT_ELEMENT is True:
+        if DIFF_ELEMENT is True:
             try:
                 jsonFile = jsonFile['differential']
             except:
