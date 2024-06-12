@@ -1,0 +1,1 @@
+{"resourceType":"OperationOutcome","id":"ODS-OperationOutcome-InvalidFormat-Example","issue":[{"severity":"error","code":"processing","diagnostics":"HAPI-1940: Invalid date/time/quantity format: \"gtINVALID\""}]}

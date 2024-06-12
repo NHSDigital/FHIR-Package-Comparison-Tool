@@ -1,0 +1,1 @@
+{"resourceType":"OperationOutcome","id":"ODS-OperationOutcome-NoDeclaredFilter-Example","issue":[{"severity":"error","code":"processing","diagnostics":"There is no declared filter called constituency on code system https://fhir.nhs.uk/Id/ods-organization-code"}]}

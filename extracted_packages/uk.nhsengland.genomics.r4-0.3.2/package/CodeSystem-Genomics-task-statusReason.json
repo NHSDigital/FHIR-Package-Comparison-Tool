@@ -1,0 +1,102 @@
+{
+  "resourceType": "CodeSystem",
+  "url": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/identifier/CodeSystem",
+      "value": "task-statusReason-genomics"
+    }
+  ],
+  "version": "0.1.0",
+  "name": "TaskStatusReasonGenomics",
+  "title": "Task StatusReason Genomics",
+  "status": "draft",
+  "date": "2023-12-06",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Status reasons for Tasks in genomics",
+  "copyright": "Copyright © 2023 NHS England",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+      {
+        "code": "FurtherClinicalDetailsRequired",
+        "display": "Further Clinical Details Required"
+      },
+    {
+      "code": "AwaitingSpecimen",
+      "display": "Awaiting Specimen"
+    },
+    {
+      "code": "AwaitingRoDAndSpecimen",
+      "display": "Awaiting Record of Discussion and Specimen"
+    },
+    {
+      "code": "InvalidRequest",
+      "display": "Invalid Request"
+    },
+    {
+      "code": "PipelineActivityFailure",
+      "display": "Pipeline Activity Failure"
+    },
+    {
+      "code": "TaskTimeExceeded",
+      "display": "Task Time Exceeded"
+    },
+    {
+      "code": "UnableToInterpret",
+      "display": "Unable To Interpret"
+    },
+    {
+      "code": "SpecimenReceived",
+      "display": "SpecimenReceived"
+    },
+    {
+      "code": "SpecimenQualityNotOK",
+      "display": "Specimen Quality Not OK"
+    },
+    {
+      "code": "TestNoLongerRequired",
+      "display": "Test No Longer Required"
+    },
+    {
+      "code": "MultipleTestRequestedOnTheSamePatient",
+      "display": "Multiple Test Requested On The Same Patient(only one test required)"
+    },
+    {
+      "code": "DecisionNotToProgressWithTestRequest",
+      "display": "Decision Not To Progress With Test Request"
+    },
+    {
+      "code": "TestCouldNotBeDeliveredDueToProcessFailures",
+      "display": "Test Could Not Be Delivered Due To Process Failures"
+    },
+    {
+      "code": "WrongPatient(Mark-in-Error)",
+      "display": "Wrong Patient (Mark-in-Error)"
+    },
+    {
+      "code": "SampleAlignedToWrongPatient(Mark-in-Error)",
+      "display": "Sample Aligned To Wrong Patient (Mark-in-Error)"
+    },
+    {
+      "code": "PatienceChoiceIncorrectlyRecorded(WGS Only)-Mark-in-Error",
+      "display": "Patience Choice Incorrectly Recorded (WGS Only)-Mark-in-Error"
+    },
+    {
+      "code": "CorrectionOfClinicalData(Mark-in-Error)",
+      "display": "Correction Of Clinical Data (Mark-in-Error)"
+    }
+  ]
+}

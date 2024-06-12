@@ -1,0 +1,12 @@
+{
+  "name": "careconnect.stu3.03.00.00",
+  "version": "3.1.0",
+  "description": "This is the initial baseline of the STU3 Care Connect assets.",
+  "author": "HL7 UK",
+  "fhirVersions": [
+    "3.0.1"
+  ],
+  "dependencies": {
+    "hl7.fhir.r3.core": "3.0.2"
+  }
+}

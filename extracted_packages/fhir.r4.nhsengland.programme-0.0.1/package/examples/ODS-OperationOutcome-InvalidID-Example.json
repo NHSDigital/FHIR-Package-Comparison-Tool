@@ -1,0 +1,1 @@
+{"resourceType":"OperationOutcome","id":"ODS-OperationOutcome-InvalidID-Example","issue":[{"severity":"error","code":"processing","diagnostics":"HAPI-2001: Resource Organization/83632648493 is not known"}]}

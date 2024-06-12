@@ -1,0 +1,1 @@
+{"resourceType":"OperationOutcome","id":"ODS-OperationOutcome-MethodNotAllowed-Example","issue":[{"severity":"error","code":"processing","diagnostics":"HAPI-0427: HTTP Method DELETE is not allowed for this operation. Allowed method(s): POST, GET"}]}

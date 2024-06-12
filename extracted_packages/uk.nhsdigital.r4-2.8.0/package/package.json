@@ -1,0 +1,14 @@
+{
+  "name": "uk.nhsdigital.r4",
+  "version": "2.8.0",
+  "description": "NHS (England) National Services Implementation Guide",
+  "author": "nhsdigital",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "jurisdiction": "urn:iso:std:iso:3166:-2:GB-ENG",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "fhir.r4.ukcore.stu3.currentbuild": "0.0.3-pre-release"
+  }
+}

@@ -1,0 +1,1 @@
+{"resourceType":"Practitioner","id":"1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D","identifier":[{"system":"https://fhir.nhs.uk/Id/sds-user-id","value":"896547302565"}],"name":[{"use":"official","family":"Smith","prefix":["Dr"]}]}
