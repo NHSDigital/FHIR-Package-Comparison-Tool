@@ -1,0 +1,1 @@
+{"resourceType":"RelatedPerson","id":"UKCore-RelatedPerson-Extension-EffectivePeriod-Example","extension":[{"url":"https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EffectivePeriod","valuePeriod":{"start":"2007-03-04T00:00:00.000Z"}}],"patient":{"reference":"Patient/UKCore-Patient-RichardSmith-Example"}}

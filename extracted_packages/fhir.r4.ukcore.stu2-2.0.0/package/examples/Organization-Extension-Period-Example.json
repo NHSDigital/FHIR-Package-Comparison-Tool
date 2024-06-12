@@ -1,0 +1,1 @@
+{"resourceType":"Organization","id":"Organization-Extension-Period-Example","extension":[{"url":"http://hl7.org/fhir/StructureDefinition/organization-period","valuePeriod":{"start":"2017-01-01T00:00:00.000Z"}}],"identifier":[{"use":"official","system":"https://fhir.nhs.uk/Id/ods-organization-code","value":"RR8"}],"name":"LEEDS TEACHING HOSPITALS NHS TRUST"}

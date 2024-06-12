@@ -38,57 +38,43 @@
     <tr style="text-align: right;">
       <th></th>
       <th>CareConnect-AllergyIntolerance-1</th>
-      <th>StructureDefinition-us-core-allergyintolerance</th>
       <th>UKCore-AllergyIntolerance</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>AllergyIntolerance.clinicalStatus</th>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/allergyintolerance-clinical</td>
-      <td></td>
-    </tr>
-    <tr>
       <th>AllergyIntolerance.code</th>
       <td></td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1186.8</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyCode</td>
     </tr>
     <tr>
       <th>AllergyIntolerance.code.coding:snomedCT</th>
       <td>example<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-AllergyCode-1</td>
       <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>AllergyIntolerance.reaction.exposureRoute</th>
       <td>example<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-AllergyExposureRoute-1</td>
-      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute</td>
     </tr>
     <tr>
       <th>AllergyIntolerance.reaction.manifestation</th>
       <td>extensible<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-AllergyManifestation-1</td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/clinical-findings</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyManifestation</td>
     </tr>
     <tr>
       <th>AllergyIntolerance.reaction.severity</th>
       <td>required<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ReactionEventSeverity-1</td>
       <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>AllergyIntolerance.reaction.substance</th>
-      <td></td>
       <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-AllergySubstance</td>
     </tr>
     <tr>
       <th>AllergyIntolerance.verificationStatus</th>
       <td>required<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-AllergyVerificationStatus-1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/allergyintolerance-verification</td>
       <td></td>
     </tr>
   </tbody>
@@ -172,40 +158,18 @@
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>StructureDefinition-us-core-careplan</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>CarePlan.intent</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/care-plan-intent</td>
-    </tr>
-    <tr>
-      <th>CarePlan.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/request-status</td>
-    </tr>
-    <tr>
-      <th>CarePlan.text.status</th>
-      <td>required<br>http://hl7.org/fhir/us/core/ValueSet/us-core-narrative-status</td>
-    </tr>
   </tbody>
 </table><h2>CareTeam</h2>
 <table border="1" class="dataframe table-bordered table-striped table-hover">
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>StructureDefinition-us-core-careteam</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>CareTeam.participant.role</th>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.30</td>
-    </tr>
-    <tr>
-      <th>CareTeam.status</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/care-team-status</td>
-    </tr>
   </tbody>
 </table><h2>Claim</h2>
 <table border="1" class="dataframe table-bordered table-striped table-hover">
@@ -491,16 +455,12 @@
       <th></th>
       <th>CareConnect-ProblemHeader-Condition-1</th>
       <th>CareConnect-Condition-1</th>
-      <th>StructureDefinition-us-core-condition-encounter-diagnosis</th>
-      <th>StructureDefinition-us-core-condition-problems-health-concerns</th>
       <th>UKCore-Condition</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>Condition.bodySite</th>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
       <td>preferred</td>
@@ -510,63 +470,23 @@
       <td></td>
       <td>required<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-BodySite-1</td>
       <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Condition.category</th>
       <td>extensible<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ConditionCategory-1</td>
       <td>extensible<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ConditionCategory-1</td>
-      <td></td>
-      <td></td>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCategory</td>
-    </tr>
-    <tr>
-      <th>Condition.category:screening-assessment</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/us/core/ValueSet/us-core-screening-assessment-condition-category</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Condition.category:us-core</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/us/core/ValueSet/us-core-problem-or-health-concern</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Condition.clinicalStatus</th>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/condition-clinical</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/condition-clinical</td>
-      <td></td>
     </tr>
     <tr>
       <th>Condition.code</th>
       <td></td>
       <td></td>
-      <td>preferred<br>http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code</td>
-      <td>preferred<br>http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode</td>
     </tr>
     <tr>
       <th>Condition.code.coding:snomedCT</th>
       <td>required<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ConditionCode-1</td>
       <td>required<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ConditionCode-1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Condition.verificationStatus</th>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/condition-ver-status</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/condition-ver-status</td>
       <td></td>
     </tr>
   </tbody>
@@ -588,37 +508,14 @@
   </thead>
   <tbody>
   </tbody>
-</table><h2>Coverage</h2>
-<table border="1" class="dataframe table-bordered table-striped table-hover">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>StructureDefinition-us-core-coverage</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Coverage.type</th>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591</td>
-    </tr>
-    <tr>
-      <th>Coverage.relationship</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/subscriber-relationship</td>
-    </tr>
-  </tbody>
 </table><h2>Device</h2>
 <table border="1" class="dataframe table-bordered table-striped table-hover">
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>StructureDefinition-us-core-implantable-device</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>Device.type</th>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/device-kind</td>
-    </tr>
   </tbody>
 </table><h2>DiagnosticReport</h2>
 <table border="1" class="dataframe table-bordered table-striped table-hover">
@@ -626,8 +523,6 @@
     <tr style="text-align: right;">
       <th></th>
       <th>CareConnect-DiagnosticReport-1</th>
-      <th>StructureDefinition-us-core-diagnosticreport-lab</th>
-      <th>StructureDefinition-us-core-diagnosticreport-note</th>
       <th>UKCore-DiagnosticReport-Lab</th>
       <th>UKCore-DiagnosticReport</th>
     </tr>
@@ -638,22 +533,10 @@
       <td>preferred</td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>DiagnosticReport.category:us-core</th>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-category</td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>DiagnosticReport.code</th>
       <td></td>
-      <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-laboratory-test-codes</td>
-      <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-report-and-note-codes</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ReportCode</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ReportCode</td>
     </tr>
@@ -662,14 +545,10 @@
       <td>extensible<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ReportCodeSnCT-1</td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>DiagnosticReport.codedDiagnosis</th>
       <td>preferred<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-FindingCode-1</td>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
     </tr>
@@ -678,24 +557,12 @@
       <td>extensible<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-FindingCode-1</td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>DiagnosticReport.conclusionCode</th>
       <td></td>
-      <td></td>
-      <td></td>
       <td>preferred</td>
       <td>preferred</td>
-    </tr>
-    <tr>
-      <th>DiagnosticReport.status</th>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/diagnostic-report-status</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/diagnostic-report-status</td>
-      <td></td>
-      <td></td>
     </tr>
   </tbody>
 </table><h2>DocumentReference</h2>
@@ -706,7 +573,6 @@
       <th>NHSDigital-DocumentReference-NRL</th>
       <th>NHSDigital-DocumentReference</th>
       <th>CareConnect-DocumentReference-1</th>
-      <th>StructureDefinition-us-core-documentreference</th>
     </tr>
   </thead>
   <tbody>
@@ -715,42 +581,18 @@
       <td></td>
       <td>required<br>https://fhir.nhs.uk/ValueSet/DocumentCategory</td>
       <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>DocumentReference.category:uscore</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-category</td>
-    </tr>
-    <tr>
-      <th>DocumentReference.content.format</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://terminology.hl7.org/ValueSet/v3-HL7FormatCodes</td>
     </tr>
     <tr>
       <th>DocumentReference.context.practiceSetting</th>
       <td></td>
       <td>extensible<br>https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType</td>
       <td>preferred<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-CareSettingType-1</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>DocumentReference.status</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/document-reference-status</td>
     </tr>
     <tr>
       <th>DocumentReference.type</th>
       <td>required<br>https://fhir.nhs.uk/ValueSet/Document-Type</td>
       <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-DocumentType-1</td>
-      <td>required<br>http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-type</td>
     </tr>
   </tbody>
 </table><h2>Dosage</h2>
@@ -769,7 +611,6 @@
       <th></th>
       <th>NHSDigital-Encounter</th>
       <th>CareConnect-Encounter-1</th>
-      <th>StructureDefinition-us-core-encounter</th>
       <th>UKCore-Encounter</th>
     </tr>
   </thead>
@@ -778,7 +619,6 @@
       <th>Encounter.hospitalization.admitSource</th>
       <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-SourceOfAdmission-1</td>
-      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-SourceOfAdmission</td>
     </tr>
     <tr>
@@ -786,18 +626,15 @@
       <td></td>
       <td>extensible</td>
       <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Encounter.hospitalization.dischargeDisposition</th>
       <td></td>
       <td>example<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-DischargeDestination-1</td>
-      <td>preferred<br>http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-DischargeDestination</td>
     </tr>
     <tr>
       <th>Encounter.location.physicalType</th>
-      <td></td>
       <td></td>
       <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-EncounterLocationType</td>
@@ -806,21 +643,18 @@
       <th>Encounter.serviceType</th>
       <td>extensible<br>https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType</td>
       <td></td>
-      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-CareSettingType</td>
     </tr>
     <tr>
       <th>Encounter.type</th>
       <td></td>
       <td></td>
-      <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-EncounterType</td>
     </tr>
     <tr>
       <th>Encounter.type.coding:snomedCT</th>
       <td></td>
       <td>extensible<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-EncounterType-1</td>
-      <td></td>
       <td></td>
     </tr>
   </tbody>
@@ -894,24 +728,6 @@
     <tr>
       <th>Flag.code</th>
       <td>extensible<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-MedicationFlag-1</td>
-    </tr>
-  </tbody>
-</table><h2>Goal</h2>
-<table border="1" class="dataframe table-bordered table-striped table-hover">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>StructureDefinition-us-core-goal</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Goal.lifecycleStatus</th>
-      <td>required<br>http://hl7.org/fhir/ValueSet/goal-status</td>
-    </tr>
-    <tr>
-      <th>Goal.description</th>
-      <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-goal-description</td>
     </tr>
   </tbody>
 </table><h2>HealthcareService</h2>
@@ -1001,7 +817,6 @@
       <th></th>
       <th>NHSDigital-Immunization</th>
       <th>CareConnect-Immunization-1</th>
-      <th>StructureDefinition-us-core-immunization</th>
       <th>UKCore-Immunization</th>
     </tr>
   </thead>
@@ -1011,13 +826,11 @@
       <td></td>
       <td>example<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ImmunizationExplanationReason-2</td>
       <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Immunization.explanation.reasonNotGiven</th>
       <td></td>
       <td>extensible<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ReasonImmunizationNotAdministered-1</td>
-      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1025,18 +838,15 @@
       <td>required<br>http://hl7.eu/fhir/ig/dgc/ValueSet/covid-19-diseases</td>
       <td></td>
       <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Immunization.reasonCode</th>
       <td>extensible<br>https://fhir.nhs.uk/ValueSet/NHSDigital-ImmunizationExplanationReason</td>
       <td></td>
-      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ImmunizationExplanationReason</td>
     </tr>
     <tr>
       <th>Immunization.route</th>
-      <td></td>
       <td></td>
       <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute</td>
@@ -1046,34 +856,23 @@
       <td></td>
       <td>example<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-MedicationDosageRoute-1</td>
       <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Immunization.site</th>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite</td>
       <td></td>
-      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ImmunizationAdministrationBodySite</td>
-    </tr>
-    <tr>
-      <th>Immunization.status</th>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/immunization-status</td>
-      <td></td>
     </tr>
     <tr>
       <th>Immunization.statusReason</th>
       <td>required<br>https://fhir.nhs.uk/ValueSet/NHSDigital-ReasonImmunizationNotAdministered</td>
       <td></td>
-      <td>example<br>http://hl7.org/fhir/ValueSet/immunization-status-reason</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ReasonImmunizationNotAdministered</td>
     </tr>
     <tr>
       <th>Immunization.vaccineCode</th>
       <td>extensible<br>https://fhir.nhs.uk/ValueSet/NHSDigital-VaccineCode</td>
       <td>extensible<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-VaccineCode-1</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-VaccineCode</td>
     </tr>
   </tbody>
@@ -1124,18 +923,9 @@
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>StructureDefinition-us-core-location</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>Location.address.state</th>
-      <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state</td>
-    </tr>
-    <tr>
-      <th>Location.type</th>
-      <td>extensible<br>http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType</td>
-    </tr>
   </tbody>
 </table><h2>Medication</h2>
 <table border="1" class="dataframe table-bordered table-striped table-hover">
@@ -1146,7 +936,6 @@
       <th>NHSDigital-MedicationRequest-Medication</th>
       <th>NHSDigital-Medication</th>
       <th>CareConnect-Medication-1</th>
-      <th>StructureDefinition-us-core-medication</th>
       <th>UKCore-Medication</th>
     </tr>
   </thead>
@@ -1157,7 +946,6 @@
       <td>required<br>https://fhir.nhs.uk/ValueSet/NHSDigital-MedicationRequest-Code</td>
       <td>extensible<br>https://fhir.nhs.uk/ValueSet/NHSDigital-MedicationCode</td>
       <td>required<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-MedicationCode-1</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode</td>
     </tr>
     <tr>
@@ -1166,7 +954,6 @@
       <td></td>
       <td></td>
       <td>required<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-MedicationForm-1</td>
-      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationForm</td>
     </tr>
   </tbody>
@@ -1218,7 +1005,6 @@
       <th></th>
       <th>NHSDigital-MedicationDispense</th>
       <th>CareConnect-MedicationDispense-1</th>
-      <th>StructureDefinition-us-core-medicationdispense</th>
       <th>UKCore-MedicationDispense</th>
     </tr>
   </thead>
@@ -1227,19 +1013,10 @@
       <th>MedicationDispense.dosageInstruction.asNeeded[x]</th>
       <td></td>
       <td></td>
-      <td></td>
       <td>preferred</td>
     </tr>
     <tr>
-      <th>MedicationDispense.dosageInstruction.doseAndRate.dose[x]</th>
-      <td></td>
-      <td></td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/ucum-common</td>
-      <td></td>
-    </tr>
-    <tr>
       <th>MedicationDispense.dosageInstruction.method</th>
-      <td></td>
       <td></td>
       <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageMethod</td>
@@ -1248,12 +1025,10 @@
       <th>MedicationDispense.dosageInstruction.route</th>
       <td></td>
       <td></td>
-      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute</td>
     </tr>
     <tr>
       <th>MedicationDispense.dosageInstruction.site</th>
-      <td></td>
       <td></td>
       <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite</td>
@@ -1262,20 +1037,11 @@
       <th>MedicationDispense.medication[x]</th>
       <td>extensible<br>https://fhir.nhs.uk/ValueSet/NHSDigital-MedicationCode</td>
       <td>example<br>http://hl7.org/fhir/ValueSet/medication-codes</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode</td>
-    </tr>
-    <tr>
-      <th>MedicationDispense.quantity</th>
-      <td></td>
-      <td></td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/ucum-common</td>
-      <td></td>
     </tr>
     <tr>
       <th>MedicationDispense.statusReason[x].coding:amendmentStatusReason</th>
       <td>required<br>https://fhir.nhs.uk/ValueSet/DM-task-reason-code</td>
-      <td></td>
       <td></td>
       <td></td>
     </tr>
@@ -1284,13 +1050,11 @@
       <td>required<br>https://fhir.nhs.uk/ValueSet/DM-medicationdispense-status-reason</td>
       <td></td>
       <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>MedicationDispense.type</th>
       <td>required<br>https://fhir.nhs.uk/ValueSet/DM-medicationdispense-type</td>
       <td>preferred<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-MedicationSupplyType-1</td>
-      <td>extensible<br>http://terminology.hl7.org/ValueSet/v3-ActPharmacySupplyType</td>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationSupplyType</td>
     </tr>
   </tbody>
@@ -1303,14 +1067,12 @@
       <th>NHSDigital-MedicationRequest</th>
       <th>NHSDigital-MedicationRequest-Outcome</th>
       <th>CareConnect-MedicationRequest-1</th>
-      <th>StructureDefinition-us-core-medicationrequest</th>
       <th>UKCore-MedicationRequest</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>MedicationRequest.category</th>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -1324,7 +1086,6 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>MedicationRequest.category.coding:patientClassUK</th>
@@ -1333,23 +1094,12 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>MedicationRequest.category:us-core</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/medicationrequest-category</td>
-      <td></td>
     </tr>
     <tr>
       <th>MedicationRequest.courseOfTherapyType</th>
       <td></td>
       <td>required<br>https://fhir.nhs.uk/ValueSet/DM-medicationrequest-course-of-therapy</td>
       <td>required<br>https://fhir.nhs.uk/ValueSet/DM-medicationrequest-course-of-therapy</td>
-      <td></td>
       <td></td>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCourseOfTherapy</td>
     </tr>
@@ -1360,7 +1110,6 @@
       <td></td>
       <td>required<br>http://hl7.org/fhir/ValueSet/units-of-time</td>
       <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>MedicationRequest.dosageInstruction.asNeeded[x]</th>
@@ -1368,21 +1117,10 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
       <td>preferred</td>
     </tr>
     <tr>
-      <th>MedicationRequest.dosageInstruction.doseAndRate.dose[x]</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/ucum-common</td>
-      <td></td>
-    </tr>
-    <tr>
       <th>MedicationRequest.dosageInstruction.method</th>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -1391,7 +1129,6 @@
     </tr>
     <tr>
       <th>MedicationRequest.dosageInstruction.route</th>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -1405,7 +1142,6 @@
       <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-MedicationDosageRoute-1</td>
       <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>MedicationRequest.dosageInstruction.site</th>
@@ -1413,17 +1149,7 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite</td>
-    </tr>
-    <tr>
-      <th>MedicationRequest.intent</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/medicationrequest-intent</td>
-      <td></td>
     </tr>
     <tr>
       <th>MedicationRequest.medication[x]</th>
@@ -1431,32 +1157,12 @@
       <td>extensible<br>https://fhir.nhs.uk/ValueSet/NHSDigital-MedicationCode</td>
       <td>extensible<br>https://fhir.nhs.uk/ValueSet/NHSDigital-MedicationCode</td>
       <td>example<br>http://hl7.org/fhir/ValueSet/medication-codes</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode</td>
-    </tr>
-    <tr>
-      <th>MedicationRequest.reasonCode</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>MedicationRequest.status</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/medicationrequest-status</td>
-      <td></td>
     </tr>
     <tr>
       <th>MedicationRequest.statusReason</th>
       <td></td>
       <td>required<br>https://fhir.nhs.uk/ValueSet/DM-medicationrequest-status-reason</td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -1566,20 +1272,6 @@
       <th>CareConnect-ACVPU-Observation-1</th>
       <th>CareConnect-Subscore-Observation-1</th>
       <th>CareConnect-HeartRate-Observation-1</th>
-      <th>StructureDefinition-us-core-observation-pregnancystatus</th>
-      <th>StructureDefinition-us-core-head-circumference</th>
-      <th>StructureDefinition-us-core-smokingstatus</th>
-      <th>StructureDefinition-us-core-observation-lab</th>
-      <th>StructureDefinition-us-core-observation-clinical-result</th>
-      <th>StructureDefinition-us-core-observation-screening-assessment</th>
-      <th>StructureDefinition-us-core-vital-signs</th>
-      <th>StructureDefinition-us-core-observation-pregnancyintent</th>
-      <th>StructureDefinition-us-core-observation-occupation</th>
-      <th>StructureDefinition-us-core-body-weight</th>
-      <th>StructureDefinition-us-core-body-height</th>
-      <th>StructureDefinition-us-core-body-temperature</th>
-      <th>StructureDefinition-us-core-simple-observation</th>
-      <th>StructureDefinition-us-core-observation-sexual-orientation</th>
       <th>England-Observation-MCED-Site</th>
       <th>England-Observation-MCED-Result</th>
       <th>England-Observation-MCED</th>
@@ -1591,20 +1283,6 @@
   <tbody>
     <tr>
       <th>Observation.bodySite</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -1642,20 +1320,6 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Observation.category</th>
@@ -1676,88 +1340,6 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.category:screening-assessment</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/us/core/ValueSet/us-core-screening-assessment-observation-category</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.category:us-core</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-result-observation-category</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/us/core/ValueSet/us-core-simple-observation-category</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Observation.code</th>
@@ -1772,20 +1354,6 @@
       <td>required<br>http://snomed.info/sct</td>
       <td>extensible<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ObservationType-1</td>
       <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-vitalsignresult</td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1267.6</td>
-      <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-laboratory-test-codes</td>
-      <td>extensible</td>
-      <td>preferred<br>http://hl7.org/fhir/us/core/ValueSet/us-core-survey-codes</td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>preferred</td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -1812,20 +1380,6 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Observation.code.coding:snomedCT</th>
@@ -1837,20 +1391,6 @@
       <td></td>
       <td></td>
       <td>extensible<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ObservationType-1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -1878,20 +1418,6 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationType</td>
       <td></td>
     </tr>
@@ -1908,20 +1434,6 @@
       <td></td>
       <td></td>
       <td>extensible<br>http://hl7.org/fhir/stu3/valueset-observation-vitalsignresult.html</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -1948,20 +1460,6 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Observation.component.value[x]</th>
@@ -1969,20 +1467,6 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
       <td></td>
       <td></td>
       <td></td>
@@ -2016,20 +1500,6 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Observation.component.value[x]:valueQuantity.code</th>
@@ -2050,20 +1520,6 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Observation.component:diastolicComponent.code</th>
@@ -2071,20 +1527,6 @@
       <td></td>
       <td></td>
       <td>extensible<br>http://hl7.org/fhir/stu3/valueset-observation-vitalsignresult.html</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -2118,20 +1560,6 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Observation.component:diastolicComponent.value[x]:valueQuantity</th>
@@ -2152,54 +1580,6 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.component:industry.valueCodeableConcept</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7900</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Observation.component:systolicComponent.code</th>
@@ -2207,20 +1587,6 @@
       <td></td>
       <td></td>
       <td>extensible<br>http://hl7.org/fhir/stu3/valueset-observation-vitalsignresult.html</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -2254,20 +1620,6 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Observation.component:systolicComponent.value[x]:valueQuantity</th>
@@ -2275,20 +1627,6 @@
       <td></td>
       <td></td>
       <td>required<br>http://hl7.org/fhir/stu3/valueset-ucum-vitals-common.html</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -2322,20 +1660,6 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Observation.interpretation</th>
@@ -2353,40 +1677,12 @@
       <td></td>
       <td></td>
       <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <th>Observation.method</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -2424,122 +1720,6 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.status</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/us/core/ValueSet/us-core-observation-smoking-status-status</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/observation-status</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.valueCodeableConcept</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>preferred<br>http://hl7.org/fhir/us/core/ValueSet/us-core-pregnancy-status</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-pregnancy-intent</td>
-      <td>extensible<br>http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7901</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1240.11</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Observation.valueQuantity.code</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/ucum-bodyweight|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/ucum-bodytemp|4.0.1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Observation.value[x]</th>
@@ -2547,20 +1727,6 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
       <td></td>
       <td></td>
       <td></td>
@@ -2590,20 +1756,6 @@
       <td></td>
       <td></td>
       <td></td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1267.3</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -2624,20 +1776,6 @@
       <td>required<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common</td>
       <td></td>
       <td></td>
-      <td>required<br>http://terminology.hl7.org/ValueSet/v3-UnitsOfMeasureCaseSensitive</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -2651,20 +1789,6 @@
       <td>required<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common</td>
       <td></td>
       <td>required<br>http://hl7.org/fhir/ValueSet/ucum-vitals-common</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -2711,21 +1835,13 @@
     <tr style="text-align: right;">
       <th></th>
       <th>NHSDigital-Organization</th>
-      <th>StructureDefinition-us-core-organization</th>
       <th>UKCore-Organization</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>Organization.address.state</th>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state</td>
-      <td></td>
-    </tr>
-    <tr>
       <th>Organization.type</th>
       <td>required<br>https://fhir.nhs.uk/ValueSet/organisation-role</td>
-      <td></td>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType</td>
     </tr>
   </tbody>
@@ -2758,63 +1874,38 @@
     <tr style="text-align: right;">
       <th></th>
       <th>CareConnect-Patient-1</th>
-      <th>StructureDefinition-us-core-patient</th>
       <th>UKCore-Patient</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>Patient.address.state</th>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state</td>
-      <td></td>
-    </tr>
-    <tr>
       <th>Patient.communication.language</th>
       <td></td>
-      <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/simple-language</td>
       <td>required<br>http://hl7.org/fhir/ValueSet/all-languages</td>
     </tr>
     <tr>
       <th>Patient.contact.gender</th>
       <td>required<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-AdministrativeGender-1</td>
       <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Patient.contact.relationship</th>
-      <td></td>
       <td></td>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType</td>
     </tr>
     <tr>
       <th>Patient.gender</th>
       <td>required<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-AdministrativeGender-1</td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/administrative-gender</td>
       <td></td>
     </tr>
     <tr>
       <th>Patient.maritalStatus</th>
       <td>required<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-MaritalStatus-1</td>
-      <td></td>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode</td>
     </tr>
     <tr>
       <th>Patient.name:official.use</th>
       <td>required<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-NameUse-1</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Patient.telecom.system</th>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/contact-point-system</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Patient.telecom.use</th>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/contact-point-use</td>
       <td></td>
     </tr>
   </tbody>
@@ -2824,27 +1915,18 @@
     <tr style="text-align: right;">
       <th></th>
       <th>CareConnect-Practitioner-1</th>
-      <th>StructureDefinition-us-core-practitioner</th>
       <th>UKCore-Practitioner</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>Practitioner.address.state</th>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state</td>
-      <td></td>
-    </tr>
-    <tr>
       <th>Practitioner.communication</th>
-      <td></td>
       <td></td>
       <td>required<br>http://hl7.org/fhir/ValueSet/all-languages</td>
     </tr>
     <tr>
       <th>Practitioner.gender</th>
       <td>required<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-AdministrativeGender-1</td>
-      <td></td>
       <td></td>
     </tr>
   </tbody>
@@ -2855,22 +1937,13 @@
       <th></th>
       <th>NHSDigital-PractitionerRole</th>
       <th>CareConnect-PractitionerRole-1</th>
-      <th>StructureDefinition-us-core-practitionerrole</th>
       <th>UKCore-PractitionerRole</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>PractitionerRole.code</th>
-      <td></td>
-      <td></td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.30</td>
-      <td></td>
-    </tr>
-    <tr>
       <th>PractitionerRole.code.coding:ukCoreSNOMEDCT</th>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-PractitionerRoleCode</td>
-      <td></td>
       <td></td>
       <td></td>
     </tr>
@@ -2879,19 +1952,16 @@
       <td></td>
       <td>required<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-SDSJobRoleName-1</td>
       <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>PractitionerRole.specialty</th>
       <td></td>
       <td></td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066</td>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode</td>
     </tr>
     <tr>
       <th>PractitionerRole.specialty.coding:SNOMEDSpecialty</th>
       <td>preferred<br>http://hl7.org/fhir/ValueSet/c80-practice-codes</td>
-      <td></td>
       <td></td>
       <td></td>
     </tr>
@@ -2902,7 +1972,6 @@
     <tr style="text-align: right;">
       <th></th>
       <th>CareConnect-Procedure-1</th>
-      <th>StructureDefinition-us-core-procedure</th>
       <th>UKCore-Procedure</th>
     </tr>
   </thead>
@@ -2910,49 +1979,31 @@
     <tr>
       <th>Procedure.bodySite</th>
       <td></td>
-      <td></td>
       <td>preferred</td>
     </tr>
     <tr>
       <th>Procedure.bodySite.coding:snomedCT</th>
       <td>extensible<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-BodySite-1</td>
       <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Procedure.code</th>
       <td>preferred</td>
-      <td>preferred<br>http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode</td>
     </tr>
     <tr>
       <th>Procedure.code.coding:snomedCT</th>
       <td>extensible<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ProcedureCode-1</td>
       <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Procedure.complication</th>
-      <td></td>
       <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode</td>
     </tr>
     <tr>
       <th>Procedure.complication.coding:snomedCT</th>
       <td>required<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ConditionCode-1</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Procedure.reasonCode</th>
-      <td></td>
-      <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Procedure.status</th>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/ValueSet/event-status</td>
       <td></td>
     </tr>
   </tbody>
@@ -2979,14 +2030,9 @@
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>StructureDefinition-us-core-provenance</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>Provenance.agent.type</th>
-      <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type</td>
-    </tr>
   </tbody>
 </table><h2>Quantity</h2>
 <table border="1" class="dataframe table-bordered table-striped table-hover">
@@ -3047,19 +2093,16 @@
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>StructureDefinition-us-core-relatedperson</th>
       <th>UKCore-RelatedPerson</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>RelatedPerson.communication.language</th>
-      <td></td>
       <td>required<br>http://hl7.org/fhir/ValueSet/all-languages</td>
     </tr>
     <tr>
       <th>RelatedPerson.relationship</th>
-      <td>preferred<br>http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype</td>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType</td>
     </tr>
   </tbody>
@@ -3101,7 +2144,6 @@
     <tr style="text-align: right;">
       <th></th>
       <th>NHSDigital-ServiceRequest</th>
-      <th>StructureDefinition-us-core-servicerequest</th>
       <th>UKCore-ServiceRequest</th>
       <th>UKCore-ServiceRequest-Lab</th>
     </tr>
@@ -3109,7 +2151,6 @@
   <tbody>
     <tr>
       <th>ServiceRequest.bodySite</th>
-      <td></td>
       <td></td>
       <td>preferred</td>
       <td>preferred</td>
@@ -3119,39 +2160,27 @@
       <td>preferred<br>https://fhir.nhs.uk/ValueSet/NHSDigital-BARS-message-category</td>
       <td></td>
       <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>ServiceRequest.category.coding:NHSDigitalServiceRequestCategory</th>
       <td>preferred<br>https://fhir.nhs.uk/ValueSet/NHSDigital-ServiceRequest-category</td>
       <td></td>
       <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>ServiceRequest.category:genomicsWholeCaseSequencing</th>
       <td></td>
-      <td></td>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-GenomeSequencingCategory</td>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-GenomeSequencingCategory</td>
-    </tr>
-    <tr>
-      <th>ServiceRequest.category:us-core</th>
-      <td></td>
-      <td>required<br>http://hl7.org/fhir/us/core/ValueSet/us-core-servicerequest-category</td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>ServiceRequest.code</th>
       <td></td>
-      <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-PathologyAndLaboratoryMedicineProcedures</td>
     </tr>
     <tr>
       <th>ServiceRequest.orderDetail</th>
-      <td></td>
       <td></td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode</td>
@@ -3161,12 +2190,10 @@
       <td>example<br>https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType</td>
       <td></td>
       <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>ServiceRequest.performerType.coding:eRSSpecialty</th>
       <td>required<br>https://fhir.nhs.uk/ValueSet/NHSDigital-eRS-Specialty</td>
-      <td></td>
       <td></td>
       <td></td>
     </tr>
@@ -3175,12 +2202,10 @@
       <td>required<br>https://fhir.nhs.uk/ValueSet/NHSDataModelAndDictionary-treatment-function</td>
       <td></td>
       <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>ServiceRequest.reasonCode</th>
       <td></td>
-      <td>extensible<br>http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ServiceRequestReasonCode</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-ServiceRequestReasonCode</td>
     </tr>
@@ -3205,7 +2230,6 @@
     <tr style="text-align: right;">
       <th></th>
       <th>CareConnect-Specimen-1</th>
-      <th>StructureDefinition-us-core-specimen</th>
       <th>UKCore-Specimen</th>
     </tr>
   </thead>
@@ -3213,37 +2237,31 @@
     <tr>
       <th>Specimen.collection.bodySite</th>
       <td></td>
-      <td>extensible<br>http://hl7.org/fhir/ValueSet/body-site</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-SpecimenBodySite</td>
     </tr>
     <tr>
       <th>Specimen.collection.bodySite.coding:snomedCT</th>
       <td>extensible<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-SpecimenBodySite-1</td>
       <td></td>
-      <td></td>
     </tr>
     <tr>
       <th>Specimen.condition</th>
       <td></td>
-      <td>extensible<br>http://terminology.hl7.org/ValueSet/v2-0493</td>
       <td>extensible<br>https://fhir.hl7.org.uk/ValueSet/UKCore-BiopsyState</td>
     </tr>
     <tr>
       <th>Specimen.container.type</th>
-      <td></td>
       <td></td>
       <td>preferred</td>
     </tr>
     <tr>
       <th>Specimen.type</th>
       <td></td>
-      <td>extensible<br>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.54</td>
       <td>preferred<br>https://fhir.hl7.org.uk/ValueSet/UKCore-SpecimenType</td>
     </tr>
     <tr>
       <th>Specimen.type.coding:snomedCT</th>
       <td>extensible<br>https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-SpecimenType-1</td>
-      <td></td>
       <td></td>
     </tr>
   </tbody>

@@ -1,0 +1,1 @@
+{"resourceType":"Patient","id":"UKCore-Patient-Sn-SingleLanguage-Example","name":[{"use":"official","family":"JONES","given":["Jason"]}],"communication":[{"language":{"coding":[{"system":"urn:ietf:bcp:47","code":"en","display":"English"}]}}]}
