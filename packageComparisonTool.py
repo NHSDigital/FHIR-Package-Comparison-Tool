@@ -55,13 +55,15 @@ def find_attributes_min_max(json_data, attribute_dict=None):
         attribute_dict = {}
 
     if isinstance(json_data, dict):
-        if 'id' in json_data and ('min' in json_data or 'max' in json_data):
+        if 'id' in json_data and ('min' in json_data or 'max' in json_data) and (not os.environ['IGNORE_EXTENSION'] or 'extension' not in json_data['id'].lower()):
             if 'min' in json_data:
                 attribute_dict[json_data['id']] = str(json_data['min'])+'..'
             else:
-                attribute_dict[json_data['id']] = '..'
+                attribute_dict[json_data['id']] = '_..'
             if 'max' in json_data:
                 attribute_dict[json_data['id']] = attribute_dict[json_data['id']]+str(json_data['max'])
+            else:
+                attribute_dict[json_data['id']]+"_"
         for key, value in json_data.items():\
             find_attributes_min_max(value, attribute_dict)
     elif isinstance(json_data, list):
@@ -74,7 +76,7 @@ def find_attributes_valueSet(json_data, attribute_dict=None):
         attribute_dict = {}
 
     if isinstance(json_data, dict):
-        if 'id' in json_data and ('binding' in json_data):
+        if 'id' in json_data and ('binding' in json_data) and (not os.environ['IGNORE_EXTENSION'] or 'extension' not in json_data['id'].lower()):
             try:
                 attribute_dict[json_data['id']] = f"{json_data['binding']['strength']}\n{json_data['binding']['valueSet']}"
             except:
@@ -91,7 +93,7 @@ def find_attributes_x(json_data, custom_key, attribute_dict=None):
         attribute_dict = {}
 
     if isinstance(json_data, dict):
-        if 'id' in json_data and custom_key in json_data:
+        if 'id' in json_data and custom_key in json_data and (not os.environ['IGNORE_EXTENSION'] or 'extension' not in json_data['id'].lower()):
             attribute_dict[json_data['id']] = str(json_data[custom_key])
         for key, value in json_data.items():\
             find_attributes_x(value, custom_key, attribute_dict)
@@ -145,6 +147,12 @@ for path in glob.glob(extract_package_path+'**/package/*.json', recursive=True):
     resource = check_if_profile(jsonFile)
     if resource != None:
         jsonFile = check_if_stu3(path,jsonFile)
+        if os.environ['DIFF_ELEMENT']:
+            #try:
+            jsonFile = jsonFile['differential']
+            print(jsonFile)
+            #except:
+                #print(f"No differential found in {name} - using snapshot")
         if resource not in table_min_max.keys():
             table_min_max[resource] = []
         attribute_dict_min_max = find_attributes_min_max(jsonFile)

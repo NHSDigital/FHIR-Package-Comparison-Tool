@@ -2,28 +2,29 @@ name: Package Comparison Tool
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
   workflow_dispatch:
     inputs:
       fhir-element:
-        description: 'FHIR elements to compare, separated by a comma, e.g. min,max. Cardinality, ValueSet binding & mustSupport are created as default'
+        description: 'FHIR elements to compare, separated by a comma, e.g. min,max'
+        type: string
+      differential:
+        description: 'Check only the elements within the StructureDefinition.differential'
+        type: boolean
+      ignore-extensions:
+        description: 'Check to ignore any extension elements'
+        type: boolean
 
-
-
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
     runs-on: ubuntu-latest
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
-          ref: ${{ github.event.pull_request.head.ref }}
+          repository: ${{ github.event.repository.full_name }}
+          ref: ${{ github.event.ref }}
 
-      - name: Set up python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
@@ -33,13 +34,16 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r ./requirements.txt
 
-      - name: Execute Naming Convention Check
-        run: INPUT_ELEMENT=${{ github.event.inputs.fhir-element }} python packageComparisonTool.py
-         
+      - name: Execute Package Comparison Tool
+        run: |
+          python packageComparisonTool.py
+        env:
+          INPUT_ELEMENT: ${{ github.event.inputs.fhir-element }}
+          DIFF_ELEMENT: ${{ github.event.inputs.differential }}
+          IGNORE_EXTENSION: ${{ github.event.inputs.ignore-extensions }}
+
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
           add: '.'
-      
-
