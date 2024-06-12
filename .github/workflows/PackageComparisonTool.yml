@@ -34,7 +34,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r ./requirements.txt
 
-      - name: Execute Naming Convention Check
+      - name: Execute Package Comparison Tool
         run: |
           python packageComparisonTool.py
         env:
